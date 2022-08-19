@@ -228,7 +228,7 @@ header {
   /* background-color: red; */
 }
 
-.links__menu__item{
+.links__menu__item {
   padding-block: 2.5px;
 }
 
@@ -316,7 +316,12 @@ h6 {
   background-color: rgba(0, 0, 0, 0);
   font-family: "Chau Philomene One", sans-serif;
   font-size: 40px;
+  -webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both
 }
+
+/* Animacion - Texto Titulos */
+
+ @-webkit-keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes focus-in-expand{0%{letter-spacing:-.5em;-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
 
 /* Acerca de nosotros */
 .acercaDeNosotros {
@@ -365,6 +370,50 @@ h6 {
 .equipoDeTrabajo__persona div img {
   width: 80%;
   border-radius: 50%;
+}
+
+.persona1 div img {
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 2.5s;
+}
+
+.persona2 div img {
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 2s;
+}
+
+.persona3 div img {
+  -webkit-animation: roll-in-left 0.6s ease-out both;
+  animation: roll-in-left 0.6s ease-out both;
+  animation-delay: 1.5s;
+}
+
+/* Animista - Animacion Roll-in */
+@-webkit-keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-left {
+  0% {
+    -webkit-transform: translateX(-800px) rotate(-540deg);
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0deg);
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+  }
 }
 
 .equipoDeTrabajo__persona h3,
@@ -459,6 +508,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0);
   font-family: "Chau Philomene One", sans-serif;
   font-size: 40px;
+  -webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both
 }
 
 /* Servicios */
@@ -516,6 +566,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0);
   font-family: "Chau Philomene One", sans-serif;
   font-size: 40px;
+  -webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both
 }
 
 /* Nuestro Portafolio */
@@ -545,6 +596,7 @@ h6 {
   width: 100%;
   border: 3px black dashed;
   border-radius: 5px;
+  transition-duration: 1s;
 }
 
 .proyectos {
@@ -568,6 +620,20 @@ h6 {
 }
 .proyecto4 {
   grid-area: proyecto4;
+}
+
+/* Animamcion Hoover */
+.proyecto1 a img:hover {
+  transform: scale(0.95);
+}
+.proyecto2 a img:hover {
+  transform: scale(0.95);
+}
+.proyecto3 a img:hover {
+  transform: scale(0.95);
+}
+.proyecto4 a img:hover {
+  transform: scale(0.95);
 }
 
 /* CONTÁCTANOS --------- */
@@ -667,6 +733,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0);
   font-family: "Chau Philomene One", sans-serif;
   font-size: 40px;
+  -webkit-animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both;animation:focus-in-expand .8s cubic-bezier(.25,.46,.45,.94) both
 }
 
 /* Descripción del Proyecto */
