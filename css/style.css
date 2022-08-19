@@ -1,0 +1,1160 @@
+/* Font de GoogleFonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap"); /* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap"); /* Secular */
+
+/* Reseteo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(243, 243, 235);
+}
+
+/* INDEX --------- */
+/* Header */
+header {
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.382);
+  z-index: 1;
+  /* Sticky Header: el header siempre nos persigue */
+}
+
+.barraDeAnuncios {
+  background: #f7ebda;
+  text-align: center;
+  padding: 5px;
+}
+
+.header__contenedor {
+  padding-block: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu {
+  list-style-type: none;
+  margin-left: 150px;
+  padding-block: 22px;
+  display: flex;
+}
+
+.menu__item {
+  padding-left: 25px;
+}
+
+.menu__item a {
+  color: black;
+  text-decoration: none;
+  /* Cambia el color del menú y quita el underline */
+}
+
+.menu__item a:hover {
+  text-decoration: underline;
+  /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */
+}
+
+/* Main */
+/* Banner */
+.bannerPrincipal {
+  width: 100%;
+  height: 70vh;
+  background-image: url("../imagenes/Banner_Principal.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerPrincipal__contenedor {
+  background-color: rgb(243, 243, 235, 0.7);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bannerPrincipal__titulo,
+.bannerPrincipal__texto {
+  padding-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.bannerPrincipal__titulo {
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 40px;
+}
+
+/* Propuesta de Valor */
+.propuestaDeValor {
+  width: 70%;
+  margin-inline: 15%;
+  margin-block: 50px;
+  text-align: center;
+}
+
+.propuestaDeValor__titulo,
+.propuestaDeValor__texto {
+  padding-bottom: 20px;
+}
+
+/* Portafolio y  Testimonios */
+.portafolio {
+  padding: 20px 40px 20px 40px;
+  border: 3px black dashed;
+  border-radius: 10px;
+}
+
+.portafolio {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+}
+
+.portafolio__titulo {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.portafolio__contenedor {
+  display: flex;
+  /* Esto permite que podamos poner la imagen de un lado y el texto al otro lado */
+}
+
+.portafolio__contenedor img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.testimonio {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../imagenes/Testimonio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonio__contenedor,
+.testimonio__titulo,
+.testimonio__descripcion {
+  background-color: rgba(243, 243, 235, 0);
+}
+
+.portafolio__descripcion,
+.testimonio__descripcion {
+  padding: 40px;
+  text-align: center;
+}
+
+.portafolio__proyecto,
+.portafolio__texto,
+.testimonio__cliente,
+.testimonio__texto {
+  padding-bottom: 20px;
+}
+
+/* Nosotros y Servicios*/
+.nosotros,
+.servicios {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  display: flex;
+  /* Esto permite que podamos poner la imagen de un lado y el texto al otro lado */
+}
+
+.nosotros__descripcion,
+.servicios__descripcion {
+  padding: 40px;
+  text-align: center;
+}
+
+.nosotros__titulo,
+.nosotros__texto,
+.servicios__titulo,
+.servicios__texto {
+  padding-bottom: 20px;
+}
+
+.nosotros img,
+.servicios img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+/* Call To Action */
+.callToAction {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  text-align: center;
+}
+
+.callToAction__titulo,
+.callToAction__texto,
+.callToAction__boton {
+  padding-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.logoFooter,
+.links,
+.horario,
+.suscribete {
+  width: 20%;
+  margin-inline: 10px;
+}
+
+.links__menu {
+  list-style-type: none;
+  /* background-color: red; */
+}
+
+.links__menu__item{
+  padding-block: 2.5px;
+}
+
+.links__menu__item a {
+  color: black;
+  text-decoration: none;
+  /* Cambia el color del menú y quita el underline */
+}
+
+.links__titulo,
+.horario__titulo,
+.suscribete__titulo {
+  padding-bottom: 5px;
+}
+
+.copy {
+  text-align: center;
+  font-size: 10px;
+}
+
+/* botones */
+.nosotros__boton,
+.servicios__boton,
+.callToAction__boton,
+.suscribete__boton,
+.bannerPrincipal__boton,
+.proyectos__boton,
+.back__boton,
+.portafolio__boton {
+  background-color: #f5c09d;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.nosotros__boton a,
+.servicios__boton a,
+.callToAction__boton a,
+.suscribete__boton a,
+.bannerPrincipal__boton a,
+.proyectos__boton a,
+.back__boton a,
+.portafolio__boton a {
+  background-color: #f5c09d;
+  text-decoration: none;
+  color: black;
+  font-family: "Chau Philomene One", sans-serif;
+}
+
+/* titulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Chau Philomene One", sans-serif;
+}
+
+/* OTRAS PAGINAS DEL SITIO WEB ---------  */
+/* NOSOTROS --------- */
+/* Banner */
+.bannerNosotros {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../imagenes/Banner_Nosotros.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerNosotros__contenedor {
+  background-color: rgb(243, 243, 235, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bannerNosotros__titulo {
+  padding-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 40px;
+}
+
+/* Acerca de nosotros */
+.acercaDeNosotros {
+  width: 70%;
+  margin-inline: 15%;
+  margin-block: 50px;
+  text-align: center;
+}
+
+.acercaDeNosotros__titulo,
+.acercaDeNosotros__texto {
+  padding-bottom: 20px;
+}
+
+/* Nuestro equipo de trabajo */
+.equipoDeTrabajo__titulo {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.equipoDeTrabajo__contenedor {
+  width: 80vw;
+  margin-inline: 10vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "persona1 persona2 persona3";
+}
+
+.persona1 {
+  grid-area: persona1;
+}
+.persona2 {
+  grid-area: persona2;
+}
+.persona3 {
+  grid-area: persona3;
+}
+
+.equipoDeTrabajo__persona {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.equipoDeTrabajo__persona div img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.equipoDeTrabajo__persona h3,
+.equipoDeTrabajo__persona p {
+  padding-top: 20px;
+}
+
+/* Nuestra Filosofia */
+.nuestraFilosofia {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  border: 3px black dashed;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  /* Esto permite que podamos poner la imagen de un lado y el texto al otro lado */
+}
+
+.nuestraFilosofia img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.nuestraFilosofia__descripcion {
+  padding-inline: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.nuestraFilosofia__titulo,
+.nuestraFilosofia__texto {
+  padding-bottom: 20px;
+}
+
+/* Valores */
+.valores {
+  width: 80vw;
+  margin-inline: 10vw;
+  display: grid;
+  text-align: center;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "valor1 valor2 valor3 valor4";
+}
+
+.valor1 {
+  grid-area: valor1;
+}
+.valor2 {
+  grid-area: valor2;
+}
+.valor3 {
+  grid-area: valor3;
+}
+.valor4 {
+  grid-area: valor4;
+}
+
+.valores__valor img {
+  width: 80%;
+}
+
+/* SERVICIOS --------- */
+/* Banner */
+.bannerServicios {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../imagenes/Banner_Servicios.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerServicios__contenedor {
+  background-color: rgb(243, 243, 235, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bannerServicios__titulo {
+  padding-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 40px;
+}
+
+/* Servicios */
+.servicio {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  display: flex;
+  /* Esto permite que podamos poner la imagen de un lado y el texto al otro lado */
+}
+
+.servicio img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.servicio__descripcion {
+  padding-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.servicio__titulo,
+.servicio__texto {
+  padding-bottom: 20px;
+}
+
+/* PORTAFOLIO --------- */
+/* Banner */
+.bannerPortafolio {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../imagenes/Banner_Portafolio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerPortafolio__contenedor {
+  background-color: rgb(243, 243, 235, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bannerPortafolio__titulo {
+  padding-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 40px;
+}
+
+/* Nuestro Portafolio */
+.nuestroPortafolio {
+  width: 70%;
+  margin-inline: 15%;
+  margin-block: 50px;
+  text-align: center;
+}
+
+.nuestroPortafolio__titulo,
+.nuestroPortafolio__texto {
+  padding-bottom: 20px;
+}
+
+/* Proyectos */
+.proyectos__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 5vw;
+  margin-bottom: 20px;
+}
+
+.proyectos__contenedor a img {
+  width: 100%;
+  border: 3px black dashed;
+  border-radius: 5px;
+}
+
+.proyectos {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "proyecto1 proyecto2"
+    "proyecto3 proyecto4";
+}
+
+.proyecto1 {
+  grid-area: proyecto1;
+}
+.proyecto2 {
+  grid-area: proyecto2;
+}
+.proyecto3 {
+  grid-area: proyecto3;
+}
+.proyecto4 {
+  grid-area: proyecto4;
+}
+
+/* CONTÁCTANOS --------- */
+/* Formulario */
+.form {
+  text-align: center;
+}
+
+/* Mapa */
+.mapa {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  display: flex;
+  /* Esto permite que podamos poner la imagen de un lado y el texto al otro lado */
+}
+
+.mapa img {
+  width: 350px;
+  border-radius: 10px;
+}
+
+.mapa__descripcion {
+  padding-inline: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.mapa__titulo,
+.mapa__texto {
+  padding-bottom: 20px;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 40px;
+}
+
+/* PROYECTOS --------- */
+/* Banner1 */
+.bannerProyecto1 {
+  height: 80vh;
+  background-image: url(../imagenes/BrandStudio_Proyecto1/5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Banner2 */
+.bannerProyecto2 {
+  height: 80vh;
+  background-image: url(../imagenes/BrandStudio_Proyecto2/6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Banner3 */
+.bannerProyecto3 {
+  height: 80vh;
+  background-image: url(../imagenes/BrandStudio_Proyecto3/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Banner4 */
+.bannerProyecto4 {
+  height: 80vh;
+  background-image: url(../imagenes/BrandStudio_Proyecto4/14.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bannerProyecto__contenedor {
+  background-color: rgb(243, 243, 235, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bannerProyecto__titulo {
+  padding-bottom: 15px;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: "Chau Philomene One", sans-serif;
+  font-size: 40px;
+}
+
+/* Descripción del Proyecto */
+.descripcionProyecto {
+  width: 70%;
+  margin-inline: 15%;
+  margin-block: 50px;
+  text-align: center;
+}
+
+.descripcionProyecto__texto {
+  padding-bottom: 20px;
+}
+
+/* Grid Galería */
+.galeria {
+  display: flex;
+  justify-content: center;
+}
+
+.galeria img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.gridGaleria1,
+.gridGaleria2,
+.gridGaleria3,
+.gridGaleria4 {
+  margin-inline: 10vw;
+}
+
+.gridGaleria1 div,
+.gridGaleria2 div,
+.gridGaleria3 div,
+.gridGaleria4 div {
+  border: 1px solid black;
+}
+
+/* Galeria - Proyecto 1 */
+.gridGaleria1 {
+  width: 80vw;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "G1F1 G1F1 G1F2 G1F3"
+    "G1F1 G1F1 G1F4 G1F4"
+    "G1F5 G1F5 G1F6 G1F6"
+    "G1F7 G1F7 G1F6 G1F6";
+}
+
+.G1F1 {
+  grid-area: G1F1;
+}
+.G1F2 {
+  grid-area: G1F2;
+}
+.G1F3 {
+  grid-area: G1F3;
+}
+.G1F4 {
+  grid-area: G1F4;
+}
+.G1F5 {
+  grid-area: G1F5;
+}
+.G1F6 {
+  grid-area: G1F6;
+}
+.G1F7 {
+  grid-area: G1F7;
+}
+
+/* Galeria - Proyecto 2 */
+.gridGaleria2 {
+  width: 80vw;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "G2F1 G2F1 G2F2 G2F2"
+    "G2F3 G2F3 G2F2 G2F2"
+    "G2F4 G2F4 G2F5 G2F5"
+    "G2F4 G2F4 G2F6 G2F7";
+}
+
+.G2F1 {
+  grid-area: G2F1;
+}
+.G2F2 {
+  grid-area: G2F2;
+}
+.G2F3 {
+  grid-area: G2F3;
+}
+.G2F4 {
+  grid-area: G2F4;
+}
+.G2F5 {
+  grid-area: G2F5;
+}
+.G2F6 {
+  grid-area: G2F6;
+}
+.G2F7 {
+  grid-area: G2F7;
+}
+
+/* Galeria - Proyecto 3 */
+.gridGaleria3 {
+  width: 80vw;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "G3F1 G3F1 G3F2 G3F2"
+    "G3F1 G3F1 G3F2 G3F2"
+    "G3F3 G3F3 G3F4 G3F4"
+    "G3F3 G3F3 G3F5 G3F5";
+}
+
+.G3F1 {
+  grid-area: G3F1;
+}
+.G3F2 {
+  grid-area: G3F2;
+}
+.G3F3 {
+  grid-area: G3F3;
+}
+.G3F4 {
+  grid-area: G3F4;
+}
+.G3F5 {
+  grid-area: G3F5;
+}
+/* .G3F6{
+  grid-area: G3F6;
+} */
+/* .G3F7{
+  grid-area: G3F7;
+} */
+
+/* Galeria - Proyecto 4 */
+.gridGaleria4 {
+  width: 80vw;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "G4F1 G4F1 G4F3 G4F3"
+    "G4F2 G4F4 G4F3 G4F3"
+    "G4F5 G4F5 G4F6 G4F6"
+    "G4F5 G4F5 G4F7 G4F7";
+}
+
+.G4F1 {
+  grid-area: G4F1;
+}
+.G4F2 {
+  grid-area: G4F2;
+}
+.G4F3 {
+  grid-area: G4F3;
+}
+.G4F4 {
+  grid-area: G4F4;
+}
+.G4F5 {
+  grid-area: G4F5;
+}
+.G4F6 {
+  grid-area: G4F6;
+}
+.G4F7 {
+  grid-area: G4F7;
+}
+
+/* MEDIA QUERIES --------- */
+/* Para Tablets */
+@media screen and (max-width: 768px) {
+  /* General */
+  p {
+    font-size: 15px;
+  }
+
+  /* INDEX --------- */
+  /* Header */
+  .header__contenedor {
+    margin-inline: 10%;
+  }
+  .menu {
+    margin-left: 50px;
+  }
+  /* Banner */
+  .bannerPrincipal {
+    width: 100%;
+    height: 40vh;
+  }
+  .bannerPrincipal__titulo {
+    font-size: 30px;
+  }
+  .bannerPrincipal__contenedor {
+    margin-inline: 20px;
+  }
+  /* Nuestro Portafolio */
+  .portafolio__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .portafolio__contenedor img {
+    width: 100%;
+  }
+  /* Nosotros y Servicios */
+  .nosotros img,
+  .nosotros__descripcion,
+  .servicios img,
+  .servicios__descripcion {
+    width: 50%;
+  }
+  /* Testimonio */
+  .testimonio {
+    width: 100%;
+    height: 30vh;
+    overflow: scroll;
+  }
+
+  /* NOSOTROS --------- */
+  /* Banner */
+  .bannerNosotros {
+    width: 100%;
+    height: 30vh;
+  }
+  /* Nuestro Filasofia */
+  .nuestraFilosofia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nuestraFilosofia img {
+    width: 100%;
+  }
+
+  /* SERVICIOS --------- */
+  /* Banner */
+  .bannerServicios {
+    width: 100%;
+    height: 30vh;
+  }
+  /* Nosotros y Servicios */
+  .servicio img,
+  .servicio__descripcion {
+    width: 50%;
+  }
+
+  /* PORTAFOLIO --------- */
+  /* Banner */
+  .bannerPortafolio {
+    width: 100%;
+    height: 30vh;
+  }
+
+  /* PROYECTOS --------- */
+  /* Banner */
+  .bannerProyecto1,
+  .bannerProyecto2,
+  .bannerProyecto3,
+  .bannerProyecto4 {
+    width: 100%;
+    height: 30vh;
+  }
+  /* CONTACTANOS --------- */
+  /* Mapa */
+  .mapa img,
+  .mapa__descripcion {
+    width: 50%;
+  }
+}
+
+/* Para Celulares --------- */
+@media screen and (max-width: 480px) {
+  /* General */
+  p {
+    font-size: 14px;
+  }
+
+  /* INDEX --------- */
+  /* Header */
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Banner */
+  .bannerPrincipal {
+    width: 100%;
+    height: 40vh;
+  }
+  .bannerPrincipal__contenedor {
+    margin: 30px;
+  }
+  .bannerPrincipal__titulo {
+    font-size: 25px;
+  }
+  /* Nuestro Portafolio */
+  .portafolio__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .portafolio__contenedor img {
+    object-fit: scale-down;
+    width: 100%;
+  }
+  /* Nosotros y Servicios */
+  .nosotros,
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nosotros img,
+  .servicios img {
+    width: 100%;
+  }
+  .nosotros__descripcion,
+  .servicios__descripcion {
+    width: 100%;
+  }
+  .servicios img {
+    order: -1;
+  }
+  .servicios__descripcion {
+    flex: 0;
+  }
+  /* Testimonio */
+  .testimonio {
+    width: 100%;
+    height: 30vh;
+    overflow: scroll;
+  }
+  /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logoFooter {
+    padding: 0;
+  }
+  .logoFooter img {
+    width: 150px;
+  }
+  .logoFooter,
+  .links,
+  .horario,
+  .suscribete {
+    width: 80vw;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  /* NOSOTROS --------- */
+  /* Banner */
+  .bannerNosotros {
+    width: 100%;
+    height: 30vh;
+  }
+  /* Nuestro Filasofia */
+  .nuestraFilosofia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nuestraFilosofia img {
+    width: 100%;
+  }
+  /* Valores */
+  .valores {
+    width: 80vw;
+    margin-inline: 10vw;
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "valor1 valor2"
+      "valor3 valor4";
+  }
+  .valor1 {
+    grid-area: valor1;
+  }
+  .valor2 {
+    grid-area: valor2;
+  }
+  .valor3 {
+    grid-area: valor3;
+  }
+  .valor4 {
+    grid-area: valor4;
+  }
+  .valores__valor img {
+    width: 80%;
+  }
+
+  /* SERVICIOS --------- */
+  /* Banner */
+  .bannerServicios {
+    width: 100%;
+    height: 30vh;
+  }
+  /* Nosotros y Servicios */
+  .servicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .servicio img {
+    width: 100%;
+  }
+  .servicio__descripcion {
+    width: 100%;
+  }
+  .servicio__titulo {
+    padding-top: 20px;
+  }
+  .servicio img {
+    order: -1;
+  }
+  .servicio__descripcion {
+    flex: 0;
+  }
+
+  /* PORTAFOLIO --------- */
+  /* Banner */
+  .bannerPortafolio {
+    width: 100%;
+    height: 30vh;
+  }
+  /* Sección de Proyectos */
+  .proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .proyectos__contenedor {
+    padding-bottom: 0.5rem;
+  }
+
+  /* PROYECTOS --------- */
+  /* Banner */
+  .bannerProyecto1,
+  .bannerProyecto2,
+  .bannerProyecto3,
+  .bannerProyecto4 {
+    width: 100%;
+    height: 30vh;
+  }
+
+  /* CONTACTANOS --------- */
+  /* Mapa */
+  .mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mapa img {
+    width: 100%;
+  }
+  .mapa__descripcion {
+    width: 100%;
+  }
+  .mapa__titulo {
+    padding-top: 20px;
+  }
+}
