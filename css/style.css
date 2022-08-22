@@ -219,13 +219,13 @@ header {
 .links,
 .horario,
 .suscribete {
-  width: 20%;
+  width: 20%; 
   margin-inline: 10px;
 }
 
 .links__menu {
   list-style-type: none;
-  /* background-color: red; */
+  padding-left: 0px;
 }
 
 .links__menu__item {
@@ -242,6 +242,7 @@ header {
 .horario__titulo,
 .suscribete__titulo {
   padding-bottom: 5px;
+  font-size: 20px;
 }
 
 .copy {
