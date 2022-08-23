@@ -24,20 +24,58 @@
         <div>
             <h4 class="barraDeAnuncios">Barra de anuncios</h4>
         </div>
-        <div class="header__contenedor">
+
+        <!-- Navbar antiguo -->
+        <!-- <div class="header__contenedor">
             <a href="../index.html">
-                <img class="logo" src="../imagenes/Logo.png" alt="Logo" title="Logo" width="100px">
+                <img class="logo" src="../imagenes/Logo.png" alt="Logo" title="Logo" width="100px" />
             </a>
             <nav>
                 <ul class="menu">
                     <li class="menu__item"><a href="../index.html">Home</a></li>
                     <li class="menu__item"><a href="./Nosotros.html">Nosotros</a></li>
                     <li class="menu__item"><a href="./Servicios.html">Servicios</a></li>
-                    <li class="menu__item"><a href="./Portafolio.html">Portafolio</a></li>
-                    <li class="menu__item"><a href="./Contactanos.html">Contáctanos</a></li>
+                    <li class="menu__item">
+                        <a href="./Portafolio.html">Portafolio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./Contactanos.html">Contáctanos</a>
+                    </li>
                 </ul>
             </nav>
-        </div>
+        </div> -->
+
+        <!-- Navbar nuevo -->
+        <nav class="navbar navbar-expand-lg bg-light p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand m-0 p-3" href="../index.html">
+                    <img class="logo" src="../imagenes/Logo.png" alt="Logo" title="Logo" width="100px" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto menu__item">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./Servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./Portafolio.html">Portafolio</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="./Contactanos.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <!-- Comienza el Main -->
@@ -153,7 +191,6 @@
                         Déjanos tu correo y no te perderás de ninguna información ni actualización importante.
                     </p>
                     <br>
-                    <textarea name="" id="" cols="25" rows="2"></textarea>
                     <button class="suscribete__boton">Enviar</button>
                 </div>
             </div>
