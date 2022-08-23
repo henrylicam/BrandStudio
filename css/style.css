@@ -136,7 +136,7 @@ header {
   border-radius: 10px;
 }
 
-.testimonio {
+/* .testimonio {
   width: 100%;
   height: 50vh;
   background-image: url("../imagenes/Testimonio.jpg");
@@ -147,12 +147,13 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .testimonio__contenedor,
 .testimonio__titulo,
 .testimonio__descripcion {
   background-color: rgba(243, 243, 235, 0);
+  text-align: center;
 }
 
 .portafolio__descripcion,
