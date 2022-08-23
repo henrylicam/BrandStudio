@@ -324,7 +324,8 @@ h6 {
   background-color: rgba(0, 0, 0, 0);
   font-family: "Chau Philomene One", sans-serif;
   font-size: 40px;
-  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -554,7 +555,8 @@ h6 {
   background-color: rgba(0, 0, 0, 0);
   font-family: "Chau Philomene One", sans-serif;
   font-size: 40px;
-  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -614,7 +616,8 @@ h6 {
   background-color: rgba(0, 0, 0, 0);
   font-family: "Chau Philomene One", sans-serif;
   font-size: 40px;
-  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -793,7 +796,8 @@ h6 {
   background-color: rgba(0, 0, 0, 0);
   font-family: "Chau Philomene One", sans-serif;
   font-size: 40px;
-  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
   animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
@@ -1001,10 +1005,52 @@ h6 {
   grid-area: G4F7;
 }
 
+/* Bootstrap --------- */
+/* Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+.carousel-item {
+  height: 30vh;
+  min-height: 30vh;
+  background: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+}
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  opacity: 0.1;
+}
+.carousel-caption {
+  padding-inline: 100px;
+  color: black;
+  border-radius: 15px;
+}
+.carousel-indicators {
+  background: black;
+  opacity: 0;
+}
+
+/* Info y Contáctanos */
+.infoContactanos,
+.formContactanos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* MEDIA QUERIES --------- */
 /* Para Tablets */
 @media screen and (max-width: 768px) {
-
   /* General */
   p {
     font-size: 15px;
@@ -1052,13 +1098,6 @@ h6 {
   .servicios img,
   .servicios__descripcion {
     width: 50%;
-  }
-
-  /* Testimonio */
-  .testimonio {
-    width: 100%;
-    height: 30vh;
-    overflow: scroll;
   }
 
   /* NOSOTROS --------- */
@@ -1116,11 +1155,27 @@ h6 {
   .mapa__descripcion {
     width: 50%;
   }
+
+  /* Bootstrap --------- */
+  /* Carousel */
+  .carousel-item {
+    height: 50vh;
+    min-height: 30vh;
+    background: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .carousel-caption {
+    padding-inline: 20px;
+    color: black;
+    border-radius: 15px;
+  }
+
 }
 
 /* Para Celulares --------- */
 @media screen and (max-width: 480px) {
-
   /* General */
   p {
     font-size: 14px;
@@ -1189,13 +1244,6 @@ h6 {
 
   .servicios__descripcion {
     flex: 0;
-  }
-
-  /* Testimonio */
-  .testimonio {
-    width: 100%;
-    height: 30vh;
-    overflow: scroll;
   }
 
   /* Footer */
@@ -1359,5 +1407,20 @@ h6 {
 
   .mapa__titulo {
     padding-top: 20px;
+  }
+   /* Bootstrap --------- */
+  /* Carousel */
+  .carousel-item {
+    height: 50vh;
+    min-height: 30vh;
+    background: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .carousel-caption {
+    padding-inline: 10px;
+    color: black;
+    border-radius: 15px;
   }
 }
