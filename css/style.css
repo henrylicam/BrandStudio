@@ -266,7 +266,8 @@ header {
 .bannerPrincipal__boton,
 .proyectos__boton,
 .back__boton,
-.portafolio__boton {
+.portafolio__boton,
+.contactanos__boton {
   background-color: #f5c09d;
   border: none;
   padding: 10px;
@@ -280,7 +281,8 @@ header {
 .bannerPrincipal__boton a,
 .proyectos__boton a,
 .back__boton a,
-.portafolio__boton a {
+.portafolio__boton a,
+.contactanos__boton a {
   background-color: #f5c09d;
   text-decoration: none;
   color: black;
@@ -698,7 +700,14 @@ h6 {
 
 /* CONTÁCTANOS --------- */
 /* Formulario */
-.form {
+.contactanosTitulo {
+  text-align: center;
+  font-size: 40px;
+}
+
+.contactanosInfo,
+.contactanosForm,
+.contactanosDescripcion {
   text-align: center;
 }
 
@@ -728,11 +737,6 @@ h6 {
 .mapa__titulo,
 .mapa__texto {
   padding-bottom: 20px;
-}
-
-.titulo {
-  text-align: center;
-  font-size: 40px;
 }
 
 /* PROYECTOS --------- */
@@ -1009,14 +1013,13 @@ h6 {
 
 /* Bootstrap --------- */
 /* Info y Contáctanos */
-.accordion-button{
+.accordion-button {
   color: inherit;
   background-color: #f7ebda;
-  border: none;
 }
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   color: inherit;
-  background-color:#f5c09d;
+  background-color: #f5c09d;
 }
 
 /* Carousel */
