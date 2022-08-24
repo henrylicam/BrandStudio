@@ -127,11 +127,12 @@ header {
 
 .portafolio__contenedor {
   display: flex;
+  align-items: center;
   /* Esto permite que podamos poner la imagen de un lado y el texto al otro lado */
 }
 
 .portafolio__contenedor img {
-  width: auto;
+  width: 80%;
   height: auto;
   border-radius: 10px;
 }
@@ -160,6 +161,7 @@ header {
 .testimonio__descripcion {
   padding: 40px;
   text-align: center;
+  width: 90%;
 }
 
 .portafolio__proyecto,
@@ -1006,6 +1008,17 @@ h6 {
 }
 
 /* Bootstrap --------- */
+/* Info y Contáctanos */
+.accordion-button{
+  color: inherit;
+  background-color: #f7ebda;
+  border: none;
+}
+.accordion-button:not(.collapsed){
+  color: inherit;
+  background-color:#f5c09d;
+}
+
 /* Carousel */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
@@ -1092,6 +1105,10 @@ h6 {
     width: 100%;
   }
 
+  .portafolio__descripcion {
+    padding-inline: 5px;
+  }
+
   /* Nosotros y Servicios */
   .nosotros img,
   .nosotros__descripcion,
@@ -1171,7 +1188,6 @@ h6 {
     color: black;
     border-radius: 15px;
   }
-
 }
 
 /* Para Celulares --------- */
@@ -1217,6 +1233,10 @@ h6 {
   .portafolio__contenedor img {
     object-fit: scale-down;
     width: 100%;
+  }
+
+  .portafolio__descripcion {
+    padding-inline: 5px;
   }
 
   /* Nosotros y Servicios */
@@ -1408,7 +1428,7 @@ h6 {
   .mapa__titulo {
     padding-top: 20px;
   }
-   /* Bootstrap --------- */
+  /* Bootstrap --------- */
   /* Carousel */
   .carousel-item {
     height: 50vh;
