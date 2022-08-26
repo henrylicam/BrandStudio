@@ -1336,6 +1336,12 @@ h6 {
     grid-area: persona3;
   }
 
+  .persona1 div img,
+  .persona2 div img,
+  .persona3 div img{
+    animation-delay: 1.5s;
+  }
+
   /* Nuestro Filasofia */
   .nuestraFilosofia {
     display: flex;
