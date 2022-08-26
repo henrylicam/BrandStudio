@@ -1313,6 +1313,29 @@ h6 {
     height: 30vh;
   }
 
+  /* Equipo de trabajo */
+  .equipoDeTrabajo__contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "persona1" 
+    "persona2" 
+    "persona3";
+  }
+  
+  .persona1 {
+    grid-area: persona1;
+  }
+  
+  .persona2 {
+    grid-area: persona2;
+  }
+  
+  .persona3 {
+    grid-area: persona3;
+  }
+
   /* Nuestro Filasofia */
   .nuestraFilosofia {
     display: flex;
