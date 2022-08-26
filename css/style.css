@@ -468,6 +468,12 @@ h6 {
   padding-top: 20px;
 }
 
+.equipoDeTrabajo__persona div img,
+.equipoDeTrabajo__persona h3,
+.equipoDeTrabajo__persona p {
+  overflow: hidden;
+}
+
 /* Nuestra Filosofia */
 .nuestraFilosofia {
   width: 80%;
@@ -529,6 +535,13 @@ h6 {
 
 .valores__valor img {
   width: 80%;
+}
+
+.valor1 h3,
+.valor2 h3,
+.valor3 h3,
+.valor4 h3{
+  overflow: hidden;
 }
 
 /* SERVICIOS --------- */
@@ -703,12 +716,14 @@ h6 {
 .contactanosTitulo {
   text-align: center;
   font-size: 40px;
+  overflow: hidden;
 }
 
 .contactanosInfo,
 .contactanosForm,
 .contactanosDescripcion {
   text-align: center;
+  overflow: hidden;
 }
 
 /* Mapa */
@@ -1054,14 +1069,6 @@ h6 {
 .carousel-indicators {
   background: black;
   opacity: 0;
-}
-
-/* Info y Contáctanos */
-.infoContactanos,
-.formContactanos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 /* MEDIA QUERIES --------- */
