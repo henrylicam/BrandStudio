@@ -540,7 +540,7 @@ h6 {
 .valor1 h3,
 .valor2 h3,
 .valor3 h3,
-.valor4 h3{
+.valor4 h3 {
   overflow: hidden;
 }
 
@@ -1072,7 +1072,7 @@ h6 {
 }
 
 .testimonio__titulo,
-.carousel-caption h2{
+.carousel-caption h2 {
   overflow: hidden;
 }
 
