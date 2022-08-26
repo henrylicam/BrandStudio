@@ -668,6 +668,11 @@ h6 {
   transition-duration: 1s;
 }
 
+.proyectos__contenedor h3 {
+  padding-top: 10px;
+  overflow: hidden;
+}
+
 .proyectos {
   width: 100vw;
   display: grid;
@@ -1352,6 +1357,10 @@ h6 {
 
   .nuestraFilosofia img {
     width: 100%;
+  }
+
+  .nuestraFilosofia__titulo {
+    padding-top: 10px;
   }
 
   /* Valores */
