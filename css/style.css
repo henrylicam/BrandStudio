@@ -1232,6 +1232,7 @@ h6 {
   .bannerPrincipal {
     max-width: 100%;
     height: 40vh;
+    overflow: hidden;
   }
 
   .bannerPrincipal__contenedor {
