@@ -1,32 +1,99 @@
+/* Variables generales del sitio */
 @import "./variables/fonts";
 @import "./variables/colores";
 @import "./variables/reset";
+@import "./variables/generales";
+
+/* Secciones de la página Servicios */
 @import "./secciones/header";
 @import "./secciones/banner";
 @import "./secciones/servicios";
 @import "./secciones/calltoaction";
 @import "./secciones/footer";
 
-/* titulos */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $fontPhilomene;
+/* Medias Queries */
+/* Para Tablets ---------*/
+@media screen and (max-width: 768px) {
+  /* General */
+  p {
+    font-size: 15px;
+  }
+
+  /* Banner */
+  .bannerServicios {
+    width: 100%;
+    height: 30vh;
+  }
+
+  /* Sección de servicios */
+  .servicio {
+    img {
+      width: 50%;
+    }
+    .servicio__descripcion {
+      width: 50%;
+    }
+  }
 }
 
-/* botones */
-.boton {
-  background-color: $ColorPrincipal;
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
-  a {
-    background-color: $ColorPrincipal;
-    text-decoration: none;
-    color: $ColorTexto;
-    font-family: $fontPhilomene;
+/* Para Celulares --------- */
+@media screen and (max-width: 480px) {
+  /* General */
+  p {
+    font-size: 14px;
+  }
+  /* Banner */
+  .bannerServicios {
+    width: 100%;
+    height: 30vh;
+  }
+  /* Seccion de servicios */
+  .servicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      order: -1;
+    }
+    .servicio__descripcion {
+      width: 100%;
+      flex: 0;
+      .servicio__titulo {
+        padding-top: 20px;
+      }
+    }
+  }
+  /* Footer */
+  .footer {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    .logoFooter {
+      width: 80vw !important;
+      text-align: center;
+      padding-top: 20px;
+      padding: 0;
+      img {
+        width: 150px;
+      }
+    }
+    .links {
+      width: 80vw !important;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .horario {
+      width: 80vw !important;
+      text-align: center;
+      padding-top: 20px;
+    }
+    .suscribete {
+      width: 80vw !important;
+      text-align: center;
+      padding-top: 20px;
+    }
   }
 }

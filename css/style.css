@@ -17,7 +17,7 @@
 /* INDEX --------- */
 /* Header */
 header {
-  position:sticky;
+  position: sticky;
   top: 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.382);
   z-index: 1;
@@ -263,7 +263,7 @@ header {
   border-radius: 10px;
 }
 
-.boton a{
+.boton a {
   background-color: #f5c09d;
   text-decoration: none;
   color: black;
@@ -1063,7 +1063,7 @@ h6 {
 }
 
 /* MEDIA QUERIES --------- */
-/* Para Tablets */
+/* Para Tablets --------- */
 @media screen and (max-width: 768px) {
   /* General */
   p {
@@ -1071,14 +1071,14 @@ h6 {
   }
 
   /* INDEX --------- */
-  /* Header */
-  .header__contenedor {
+  /* Header antiguo */
+  /* .header__contenedor {
     margin-inline: 10%;
   }
 
   .menu {
     margin-left: 50px;
-  }
+  } */
 
   /* Banner */
   .bannerPrincipal {
@@ -1144,7 +1144,7 @@ h6 {
     height: 30vh;
   }
 
-  /* Nosotros y Servicios */
+  /* Servicios */
   .servicio img,
   .servicio__descripcion {
     width: 50%;
@@ -1199,15 +1199,15 @@ h6 {
   }
 
   /* INDEX --------- */
-  /* Header */
-  .menu {
+  /* Header antiguo */
+  /* .menu {
     display: flex;
     flex-direction: column;
   }
 
   .menu__item {
     padding-block: 2.5px;
-  }
+  } */
 
   /* Banner */
   .bannerPrincipal {
@@ -1306,27 +1306,27 @@ h6 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "persona1" 
-    "persona2" 
-    "persona3";
+    grid-template-areas:
+      "persona1"
+      "persona2"
+      "persona3";
   }
-  
+
   .persona1 {
     grid-area: persona1;
   }
-  
+
   .persona2 {
     grid-area: persona2;
   }
-  
+
   .persona3 {
     grid-area: persona3;
   }
 
   .persona1 div img,
   .persona2 div img,
-  .persona3 div img{
+  .persona3 div img {
     animation-delay: 1.5s;
   }
 
@@ -1387,7 +1387,7 @@ h6 {
     height: 30vh;
   }
 
-  /* Nosotros y Servicios */
+  /* Servicios */
   .servicio {
     display: flex;
     flex-direction: column;
@@ -1397,22 +1397,16 @@ h6 {
 
   .servicio img {
     width: 100%;
-  }
-
-  .servicio__descripcion {
-    width: 100%;
-  }
-
-  .servicio__titulo {
-    padding-top: 20px;
-  }
-
-  .servicio img {
     order: -1;
   }
 
   .servicio__descripcion {
+    width: 100%;
     flex: 0;
+  }
+
+  .servicio__titulo {
+    padding-top: 20px;
   }
 
   /* PORTAFOLIO --------- */
