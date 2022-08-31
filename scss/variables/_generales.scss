@@ -1,0 +1,23 @@
+/* Titulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontPhilomene;
+}
+
+/* Botones */
+.boton {
+  background-color: $ColorPrincipal;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  a {
+    background-color: $ColorPrincipal;
+    text-decoration: none;
+    color: $ColorTexto;
+    font-family: $fontPhilomene;
+  }
+}

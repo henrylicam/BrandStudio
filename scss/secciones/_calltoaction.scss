@@ -1,0 +1,11 @@
+.callToAction {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  text-align: center;
+  .callToAction__titulo,
+  .callToAction__texto,
+  .callToAction__boton {
+    padding-bottom: 20px;
+  }
+}

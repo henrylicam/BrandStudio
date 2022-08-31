@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap");
 /* Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&display=swap");
-/* Secular */
+/* Philomene */
 
 /* Reseteo */
 * {
@@ -10,7 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  background-color: rgb(243, 243, 235);
+  background-color: #f3f3eb;
   overflow-x: hidden;
 }
 
@@ -112,9 +112,6 @@ header {
   padding: 20px 40px 20px 40px;
   border: 3px black dashed;
   border-radius: 10px;
-}
-
-.portafolio {
   width: 80%;
   margin-inline: 10%;
   margin-block: 50px;
@@ -259,30 +256,14 @@ header {
 }
 
 /* botones */
-.nosotros__boton,
-.servicios__boton,
-.callToAction__boton,
-.suscribete__boton,
-.bannerPrincipal__boton,
-.proyectos__boton,
-.back__boton,
-.portafolio__boton,
-.contactanos__boton {
+.boton {
   background-color: #f5c09d;
   border: none;
   padding: 10px;
   border-radius: 10px;
 }
 
-.nosotros__boton a,
-.servicios__boton a,
-.callToAction__boton a,
-.suscribete__boton a,
-.bannerPrincipal__boton a,
-.proyectos__boton a,
-.back__boton a,
-.portafolio__boton a,
-.contactanos__boton a {
+.boton a {
   background-color: #f5c09d;
   text-decoration: none;
   color: black;
@@ -1082,7 +1063,7 @@ h6 {
 }
 
 /* MEDIA QUERIES --------- */
-/* Para Tablets */
+/* Para Tablets --------- */
 @media screen and (max-width: 768px) {
   /* General */
   p {
@@ -1090,14 +1071,14 @@ h6 {
   }
 
   /* INDEX --------- */
-  /* Header */
-  .header__contenedor {
+  /* Header antiguo */
+  /* .header__contenedor {
     margin-inline: 10%;
   }
 
   .menu {
     margin-left: 50px;
-  }
+  } */
 
   /* Banner */
   .bannerPrincipal {
@@ -1163,7 +1144,7 @@ h6 {
     height: 30vh;
   }
 
-  /* Nosotros y Servicios */
+  /* Servicios */
   .servicio img,
   .servicio__descripcion {
     width: 50%;
@@ -1218,15 +1199,15 @@ h6 {
   }
 
   /* INDEX --------- */
-  /* Header */
-  .menu {
+  /* Header antiguo */
+  /* .menu {
     display: flex;
     flex-direction: column;
   }
 
   .menu__item {
     padding-block: 2.5px;
-  }
+  } */
 
   /* Banner */
   .bannerPrincipal {
@@ -1325,27 +1306,27 @@ h6 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "persona1" 
-    "persona2" 
-    "persona3";
+    grid-template-areas:
+      "persona1"
+      "persona2"
+      "persona3";
   }
-  
+
   .persona1 {
     grid-area: persona1;
   }
-  
+
   .persona2 {
     grid-area: persona2;
   }
-  
+
   .persona3 {
     grid-area: persona3;
   }
 
   .persona1 div img,
   .persona2 div img,
-  .persona3 div img{
+  .persona3 div img {
     animation-delay: 1.5s;
   }
 
@@ -1406,7 +1387,7 @@ h6 {
     height: 30vh;
   }
 
-  /* Nosotros y Servicios */
+  /* Servicios */
   .servicio {
     display: flex;
     flex-direction: column;
@@ -1416,22 +1397,16 @@ h6 {
 
   .servicio img {
     width: 100%;
-  }
-
-  .servicio__descripcion {
-    width: 100%;
-  }
-
-  .servicio__titulo {
-    padding-top: 20px;
-  }
-
-  .servicio img {
     order: -1;
   }
 
   .servicio__descripcion {
+    width: 100%;
     flex: 0;
+  }
+
+  .servicio__titulo {
+    padding-top: 20px;
   }
 
   /* PORTAFOLIO --------- */

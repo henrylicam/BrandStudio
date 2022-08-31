@@ -1,0 +1,33 @@
+/* Header */
+header {
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.382);
+  z-index: 1;
+  /* Sticky Header: el header siempre nos persigue */
+
+  div {
+    .barraDeAnuncios {
+      background: $ColorBackgroundAnuncios;
+      text-align: center;
+      padding: 5px;
+      font-family: $fontPhilomene;
+    }
+  }
+
+  nav {
+    .menu__item {
+      li {
+        a {
+          color: black;
+          text-decoration: none;
+          /* Cambia el color del menú y quita el underline */
+          &:hover {
+            border-bottom: dashed black 2px;
+            /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */
+          }
+        }
+      }
+    }
+  }
+}
