@@ -1,0 +1,54 @@
+footer {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    .logoFooter {
+      width: 20%;
+      margin-inline: 10px;
+    }
+    .links {
+      width: 20%;
+      margin-inline: 10px;
+      .links__titulo {
+        padding-bottom: 5px;
+        font-size: 20px;
+      }
+      .links__menu {
+        list-style-type: none;
+        padding-left: 0px;
+        .links__menu__item {
+          padding-block: 2.5px;
+          a {
+            color: $ColorTexto;
+            text-decoration: none;
+            /* Cambia el color del menú y quita el underline */
+          }
+        }
+      }
+    }
+    .horario {
+      width: 20%;
+      margin-inline: 10px;
+
+      .horario__titulo {
+        padding-bottom: 5px;
+        font-size: 20px;
+      }
+    }
+    .suscribete {
+      width: 20%;
+      margin-inline: 10px;
+
+      .suscribete__titulo {
+        padding-bottom: 5px;
+        font-size: 20px;
+      }
+    }
+  }
+  .copy {
+    text-align: center;
+    font-size: 10px;
+  }
+}

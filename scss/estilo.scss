@@ -1,8 +1,32 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    background-color: rgb(243, 243, 235);
-    overflow-x: hidden;
+@import "./variables/fonts";
+@import "./variables/colores";
+@import "./variables/reset";
+@import "./secciones/header";
+@import "./secciones/banner";
+@import "./secciones/servicios";
+@import "./secciones/calltoaction";
+@import "./secciones/footer";
+
+/* titulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontPhilomene;
+}
+
+/* botones */
+.boton {
+  background-color: $ColorPrincipal;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  a {
+    background-color: $ColorPrincipal;
+    text-decoration: none;
+    color: $ColorTexto;
+    font-family: $fontPhilomene;
   }
+}

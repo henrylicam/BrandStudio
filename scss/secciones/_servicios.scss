@@ -1,0 +1,22 @@
+.servicio {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  display: flex;
+  /* Esto permite que podamos poner la imagen de un lado y el texto al otro lado */
+  img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+  }
+  .servicio__descripcion {
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .servicio__titulo {
+      padding-bottom: 20px;
+    }
+  }
+}
