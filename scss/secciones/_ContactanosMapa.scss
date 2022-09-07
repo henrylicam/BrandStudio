@@ -1,0 +1,25 @@
+/* Mapa */
+.mapa {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  display: flex;
+  img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+  }
+  .mapa__descripcion {
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .mapa__titulo {
+      padding-bottom: 20px;
+    }
+    .mapa__texto {
+      padding-bottom: 20px;
+    }
+  }
+}

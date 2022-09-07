@@ -1,0 +1,52 @@
+/* Grid Galería 4 */
+.gridGaleria4 {
+    width: 80vw;
+    margin-inline: 10vw;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    "G4F1 G4F1 G4F3 G4F3"
+    "G4F2 G4F4 G4F3 G4F3"
+    "G4F5 G4F5 G4F6 G4F6"
+    "G4F5 G4F5 G4F7 G4F7";
+    .galeria {
+      display: flex;
+      justify-content: center;
+      border: 1px solid black;
+      img {
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+  
+.G4F1 {
+    grid-area: G4F1;
+  }
+  
+  .G4F2 {
+    grid-area: G4F2;
+  }
+  
+  .G4F3 {
+    grid-area: G4F3;
+  }
+  
+  .G4F4 {
+    grid-area: G4F4;
+  }
+  
+  .G4F5 {
+    grid-area: G4F5;
+  }
+  
+  .G4F6 {
+    grid-area: G4F6;
+  }
+  
+  .G4F7 {
+    grid-area: G4F7;
+  }  
+  }
+  

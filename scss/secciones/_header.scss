@@ -19,7 +19,7 @@ header {
     .menu__item {
       li {
         a {
-          color: black;
+          color:$ColorTexto;
           text-decoration: none;
           /* Cambia el color del menú y quita el underline */
           &:hover {

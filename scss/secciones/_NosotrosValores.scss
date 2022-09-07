@@ -1,0 +1,41 @@
+/* Valores */
+.valores {
+    width: 80vw;
+    margin-inline: 10vw;
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "valor1 valor2 valor3 valor4";
+    .valores__valor img {
+        width: 80%;
+      }
+    .valor1 {
+        grid-area: valor1;
+        h3 {
+            overflow: hidden;
+          }
+      }
+      
+      .valor2 {
+        grid-area: valor2;
+        h3 {
+            overflow: hidden;
+          }
+      }
+      
+      .valor3 {
+        grid-area: valor3;
+        h3 {
+            overflow: hidden;
+          }
+      }
+      
+      .valor4 {
+        grid-area: valor4;
+        h3 {
+            overflow: hidden;
+          }
+      }
+  }

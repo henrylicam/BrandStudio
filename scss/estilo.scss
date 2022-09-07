@@ -4,12 +4,80 @@
 @import "./variables/reset";
 @import "./variables/generales";
 
-/* Secciones de la página Servicios */
+/* Secciones de la página INDEX */
 @import "./secciones/header";
-@import "./secciones/banner";
-@import "./secciones/servicios";
+@import "./secciones/IndexBanner";
+@import "./secciones/IndexPropuestaDeValor";
+@import "./secciones/IndexNuestroPortafolio";
+@import "./secciones/IndexNosotrosServicios";
 @import "./secciones/calltoaction";
 @import "./secciones/footer";
+
+/* Secciones de la página NOSOTROS */
+@import "./secciones/header";
+@import "./secciones/NosotrosBanner";
+@import "./secciones/NosotrosAcercaDeNosotros";
+@import "./secciones/NosotrosNuestroEquipo";
+@import "./secciones/NosotrosNuestraFilosofia";
+@import "./secciones/NosotrosValores";
+@import "./secciones/calltoaction";
+@import "./secciones/footer";
+
+/* Secciones de la página SERVICIOS */
+@import "./secciones/header";
+@import "./secciones/ServiciosBanner";
+@import "./secciones/ServiciosServicios";
+@import "./secciones/calltoaction";
+@import "./secciones/footer";
+
+/* Secciones de la página PORTAFOLIO */
+@import "./secciones/header";
+@import "./secciones/PortafolioBanner";
+@import "./secciones/PortafolioNuestroPortafolio";
+@import "./secciones/PortafolioProyectos";
+@import "./secciones/calltoaction";
+@import "./secciones/footer";
+
+/* Secciones de la página CONTACTANOS */
+@import "./secciones/header";
+@import "./secciones/ContactanosFormulario";
+@import "./secciones/ContactanosMapa";
+@import "./secciones/footer";
+
+/* Secciones de la página PROYECTO1 */
+@import "./secciones/header";
+@import "./secciones/Proyecto1Banner";
+@import "./secciones/ProyectoDescripcion";
+@import "./secciones/Proyecto1GridGaleria";
+@import "./secciones/calltoaction";
+@import "./secciones/footer";
+
+/* Secciones de la página PROYECTO2 */
+@import "./secciones/header";
+@import "./secciones/Proyecto2Banner";
+@import "./secciones/ProyectoDescripcion";
+@import "./secciones/Proyecto2GridGaleria";
+@import "./secciones/calltoaction";
+@import "./secciones/footer";
+
+/* Secciones de la página PROYECTO3 */
+@import "./secciones/header";
+@import "./secciones/Proyecto3Banner";
+@import "./secciones/ProyectoDescripcion";
+@import "./secciones/Proyecto3GridGaleria";
+@import "./secciones/calltoaction";
+@import "./secciones/footer";
+
+/* Secciones de la página PROYECTO4 */
+@import "./secciones/header";
+@import "./secciones/Proyecto4Banner";
+@import "./secciones/ProyectoDescripcion";
+@import "./secciones/Proyecto4GridGaleria";
+@import "./secciones/calltoaction";
+@import "./secciones/footer";
+
+/* BOOTSTRAP */
+@import "./secciones/Bootstrap";
 
 /* Medias Queries */
 /* Para Tablets ---------*/
