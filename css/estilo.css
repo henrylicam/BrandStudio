@@ -36,7 +36,7 @@ h6 {
     color: black;
     font-family: "Chau Philomene One", sans-serif; }
 
-/* Secciones de la página INDEX */
+/* Secciones similares de las páginas */
 /* Header */
 header {
   position: sticky;
@@ -57,6 +57,57 @@ header {
       border-bottom: dashed black 2px;
       /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */ }
 
+.callToAction {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  text-align: center; }
+  .callToAction .callToAction__titulo,
+  .callToAction .callToAction__texto,
+  .callToAction .callToAction__boton {
+    padding-bottom: 20px; }
+
+footer .footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center; }
+  footer .footer .logoFooter {
+    width: 20%;
+    margin-inline: 10px; }
+  footer .footer .links {
+    width: 20%;
+    margin-inline: 10px; }
+    footer .footer .links .links__titulo {
+      padding-bottom: 5px;
+      font-size: 20px; }
+    footer .footer .links .links__menu {
+      list-style-type: none;
+      padding-left: 0px; }
+      footer .footer .links .links__menu .links__menu__item {
+        padding-block: 2.5px; }
+        footer .footer .links .links__menu .links__menu__item a {
+          color: black;
+          text-decoration: none;
+          /* Cambia el color del menú y quita el underline */ }
+  footer .footer .horario {
+    width: 20%;
+    margin-inline: 10px; }
+    footer .footer .horario .horario__titulo {
+      padding-bottom: 5px;
+      font-size: 20px; }
+  footer .footer .suscribete {
+    width: 20%;
+    margin-inline: 10px; }
+    footer .footer .suscribete .suscribete__titulo {
+      padding-bottom: 5px;
+      font-size: 20px; }
+
+footer .copy {
+  text-align: center;
+  font-size: 10px; }
+
+/* Secciones de la página INDEX */
 /* Banner - INDEX */
 .bannerPrincipal {
   max-width: 100%;
@@ -74,6 +125,8 @@ header {
     padding: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center; }
     .bannerPrincipal .bannerPrincipal__contenedor .bannerPrincipal__titulo {
       padding-bottom: 15px;
@@ -157,77 +210,7 @@ header {
     .servicios .servicios__descripcion .servicios__texto {
       padding-bottom: 20px; }
 
-.callToAction {
-  width: 80%;
-  margin-inline: 10%;
-  margin-block: 50px;
-  text-align: center; }
-  .callToAction .callToAction__titulo,
-  .callToAction .callToAction__texto,
-  .callToAction .callToAction__boton {
-    padding-bottom: 20px; }
-
-footer .footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-  footer .footer .logoFooter {
-    width: 20%;
-    margin-inline: 10px; }
-  footer .footer .links {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .links .links__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-    footer .footer .links .links__menu {
-      list-style-type: none;
-      padding-left: 0px; }
-      footer .footer .links .links__menu .links__menu__item {
-        padding-block: 2.5px; }
-        footer .footer .links .links__menu .links__menu__item a {
-          color: black;
-          text-decoration: none;
-          /* Cambia el color del menú y quita el underline */ }
-  footer .footer .horario {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .horario .horario__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-  footer .footer .suscribete {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .suscribete .suscribete__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-
-footer .copy {
-  text-align: center;
-  font-size: 10px; }
-
 /* Secciones de la página NOSOTROS */
-/* Header */
-header {
-  position: sticky;
-  top: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.382);
-  z-index: 1;
-  /* Sticky Header: el header siempre nos persigue */ }
-  header div .barraDeAnuncios {
-    background: #f7ebda;
-    text-align: center;
-    padding: 5px;
-    font-family: "Chau Philomene One", sans-serif; }
-  header nav .menu__item li a {
-    color: black;
-    text-decoration: none;
-    /* Cambia el color del menú y quita el underline */ }
-    header nav .menu__item li a:hover {
-      border-bottom: dashed black 2px;
-      /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */ }
-
 /* Banner - NOSOTROS */
 .bannerNosotros {
   width: 100%;
@@ -289,48 +272,52 @@ header {
     padding-bottom: 20px; }
 
 /* Nuestro equipo de trabajo */
-.equipoDeTrabajo__titulo {
+.equipoDeTrabajo .equipoDeTrabajo__titulo {
   text-align: center;
   padding-bottom: 20px; }
-  .equipoDeTrabajo__titulo .equipoDeTrabajo__contenedor {
-    width: 80vw;
-    margin-inline: 10vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: "persona1 persona2 persona3"; }
-    .equipoDeTrabajo__titulo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona {
-      display: flex;
-      flex-direction: column;
-      text-align: center; }
-      .equipoDeTrabajo__titulo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona div img {
-        width: 80%;
-        border-radius: 50%;
-        overflow: hidden; }
-      .equipoDeTrabajo__titulo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona h3 {
-        padding-top: 20px;
-        overflow: hidden; }
-      .equipoDeTrabajo__titulo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona p {
-        padding-top: 20px;
-        overflow: hidden; }
-  .equipoDeTrabajo__titulo .persona1 {
-    grid-area: persona1; }
-    .equipoDeTrabajo__titulo .persona1 div img {
-      -webkit-animation: roll-in-left 0.6s ease-out both;
-      animation: roll-in-left 0.6s ease-out both;
-      animation-delay: 2.5s; }
-  .equipoDeTrabajo__titulo .persona2 {
-    grid-area: persona2; }
-    .equipoDeTrabajo__titulo .persona2 div img {
-      -webkit-animation: roll-in-left 0.6s ease-out both;
-      animation: roll-in-left 0.6s ease-out both;
-      animation-delay: 2s; }
-  .equipoDeTrabajo__titulo .persona3 {
-    grid-area: persona3; }
-    .equipoDeTrabajo__titulo .persona3 div img {
-      -webkit-animation: roll-in-left 0.6s ease-out both;
-      animation: roll-in-left 0.6s ease-out both;
-      animation-delay: 1.5s; }
+
+.equipoDeTrabajo .equipoDeTrabajo__contenedor {
+  width: 80vw;
+  margin-inline: 10vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "persona1 persona2 persona3"; }
+  .equipoDeTrabajo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .equipoDeTrabajo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona div img {
+      width: 80%;
+      border-radius: 50%;
+      overflow: hidden; }
+    .equipoDeTrabajo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona h3 {
+      padding-top: 20px;
+      overflow: hidden; }
+    .equipoDeTrabajo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona p {
+      padding-top: 20px;
+      overflow: hidden; }
+
+.equipoDeTrabajo .persona1 {
+  grid-area: persona1; }
+  .equipoDeTrabajo .persona1 div img {
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+    animation-delay: 2.5s; }
+
+.persona2 {
+  grid-area: persona2; }
+  .persona2 div img {
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+    animation-delay: 2s; }
+
+.persona3 {
+  grid-area: persona3; }
+  .persona3 div img {
+    -webkit-animation: roll-in-left 0.6s ease-out both;
+    animation: roll-in-left 0.6s ease-out both;
+    animation-delay: 1.5s; }
 
 /* Animista - Animacion Roll-in */
 @-webkit-keyframes roll-in-left {
@@ -406,77 +393,7 @@ header {
     .valores .valor4 h3 {
       overflow: hidden; }
 
-.callToAction {
-  width: 80%;
-  margin-inline: 10%;
-  margin-block: 50px;
-  text-align: center; }
-  .callToAction .callToAction__titulo,
-  .callToAction .callToAction__texto,
-  .callToAction .callToAction__boton {
-    padding-bottom: 20px; }
-
-footer .footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-  footer .footer .logoFooter {
-    width: 20%;
-    margin-inline: 10px; }
-  footer .footer .links {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .links .links__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-    footer .footer .links .links__menu {
-      list-style-type: none;
-      padding-left: 0px; }
-      footer .footer .links .links__menu .links__menu__item {
-        padding-block: 2.5px; }
-        footer .footer .links .links__menu .links__menu__item a {
-          color: black;
-          text-decoration: none;
-          /* Cambia el color del menú y quita el underline */ }
-  footer .footer .horario {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .horario .horario__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-  footer .footer .suscribete {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .suscribete .suscribete__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-
-footer .copy {
-  text-align: center;
-  font-size: 10px; }
-
 /* Secciones de la página SERVICIOS */
-/* Header */
-header {
-  position: sticky;
-  top: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.382);
-  z-index: 1;
-  /* Sticky Header: el header siempre nos persigue */ }
-  header div .barraDeAnuncios {
-    background: #f7ebda;
-    text-align: center;
-    padding: 5px;
-    font-family: "Chau Philomene One", sans-serif; }
-  header nav .menu__item li a {
-    color: black;
-    text-decoration: none;
-    /* Cambia el color del menú y quita el underline */ }
-    header nav .menu__item li a:hover {
-      border-bottom: dashed black 2px;
-      /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */ }
-
 /* Banner - SERVICIOS */
 .bannerServicios {
   width: 100%;
@@ -545,77 +462,7 @@ header {
     .servicio .servicio__descripcion .servicio__titulo {
       padding-bottom: 20px; }
 
-.callToAction {
-  width: 80%;
-  margin-inline: 10%;
-  margin-block: 50px;
-  text-align: center; }
-  .callToAction .callToAction__titulo,
-  .callToAction .callToAction__texto,
-  .callToAction .callToAction__boton {
-    padding-bottom: 20px; }
-
-footer .footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-  footer .footer .logoFooter {
-    width: 20%;
-    margin-inline: 10px; }
-  footer .footer .links {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .links .links__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-    footer .footer .links .links__menu {
-      list-style-type: none;
-      padding-left: 0px; }
-      footer .footer .links .links__menu .links__menu__item {
-        padding-block: 2.5px; }
-        footer .footer .links .links__menu .links__menu__item a {
-          color: black;
-          text-decoration: none;
-          /* Cambia el color del menú y quita el underline */ }
-  footer .footer .horario {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .horario .horario__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-  footer .footer .suscribete {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .suscribete .suscribete__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-
-footer .copy {
-  text-align: center;
-  font-size: 10px; }
-
 /* Secciones de la página PORTAFOLIO */
-/* Header */
-header {
-  position: sticky;
-  top: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.382);
-  z-index: 1;
-  /* Sticky Header: el header siempre nos persigue */ }
-  header div .barraDeAnuncios {
-    background: #f7ebda;
-    text-align: center;
-    padding: 5px;
-    font-family: "Chau Philomene One", sans-serif; }
-  header nav .menu__item li a {
-    color: black;
-    text-decoration: none;
-    /* Cambia el color del menú y quita el underline */ }
-    header nav .menu__item li a:hover {
-      border-bottom: dashed black 2px;
-      /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */ }
-
 /* Banner - PORTAFOLIO */
 .bannerPortafolio {
   width: 100%;
@@ -715,77 +562,7 @@ header {
     .proyectos .proyecto4 a img:hover {
       transform: scale(0.95); }
 
-.callToAction {
-  width: 80%;
-  margin-inline: 10%;
-  margin-block: 50px;
-  text-align: center; }
-  .callToAction .callToAction__titulo,
-  .callToAction .callToAction__texto,
-  .callToAction .callToAction__boton {
-    padding-bottom: 20px; }
-
-footer .footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-  footer .footer .logoFooter {
-    width: 20%;
-    margin-inline: 10px; }
-  footer .footer .links {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .links .links__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-    footer .footer .links .links__menu {
-      list-style-type: none;
-      padding-left: 0px; }
-      footer .footer .links .links__menu .links__menu__item {
-        padding-block: 2.5px; }
-        footer .footer .links .links__menu .links__menu__item a {
-          color: black;
-          text-decoration: none;
-          /* Cambia el color del menú y quita el underline */ }
-  footer .footer .horario {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .horario .horario__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-  footer .footer .suscribete {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .suscribete .suscribete__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-
-footer .copy {
-  text-align: center;
-  font-size: 10px; }
-
 /* Secciones de la página CONTACTANOS */
-/* Header */
-header {
-  position: sticky;
-  top: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.382);
-  z-index: 1;
-  /* Sticky Header: el header siempre nos persigue */ }
-  header div .barraDeAnuncios {
-    background: #f7ebda;
-    text-align: center;
-    padding: 5px;
-    font-family: "Chau Philomene One", sans-serif; }
-  header nav .menu__item li a {
-    color: black;
-    text-decoration: none;
-    /* Cambia el color del menú y quita el underline */ }
-    header nav .menu__item li a:hover {
-      border-bottom: dashed black 2px;
-      /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */ }
-
 /* Formulario */
 main .contactanosTitulo {
   text-align: center;
@@ -825,67 +602,7 @@ main section .contactanosForm {
     .mapa .mapa__descripcion .mapa__texto {
       padding-bottom: 20px; }
 
-footer .footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-  footer .footer .logoFooter {
-    width: 20%;
-    margin-inline: 10px; }
-  footer .footer .links {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .links .links__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-    footer .footer .links .links__menu {
-      list-style-type: none;
-      padding-left: 0px; }
-      footer .footer .links .links__menu .links__menu__item {
-        padding-block: 2.5px; }
-        footer .footer .links .links__menu .links__menu__item a {
-          color: black;
-          text-decoration: none;
-          /* Cambia el color del menú y quita el underline */ }
-  footer .footer .horario {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .horario .horario__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-  footer .footer .suscribete {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .suscribete .suscribete__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-
-footer .copy {
-  text-align: center;
-  font-size: 10px; }
-
 /* Secciones de la página PROYECTO1 */
-/* Header */
-header {
-  position: sticky;
-  top: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.382);
-  z-index: 1;
-  /* Sticky Header: el header siempre nos persigue */ }
-  header div .barraDeAnuncios {
-    background: #f7ebda;
-    text-align: center;
-    padding: 5px;
-    font-family: "Chau Philomene One", sans-serif; }
-  header nav .menu__item li a {
-    color: black;
-    text-decoration: none;
-    /* Cambia el color del menú y quita el underline */ }
-    header nav .menu__item li a:hover {
-      border-bottom: dashed black 2px;
-      /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */ }
-
 /* Banner - PROYECTO1 */
 .bannerProyecto1 {
   height: 80vh;
@@ -974,77 +691,7 @@ header {
   .gridGaleria1 .G1F7 {
     grid-area: G1F7; }
 
-.callToAction {
-  width: 80%;
-  margin-inline: 10%;
-  margin-block: 50px;
-  text-align: center; }
-  .callToAction .callToAction__titulo,
-  .callToAction .callToAction__texto,
-  .callToAction .callToAction__boton {
-    padding-bottom: 20px; }
-
-footer .footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-  footer .footer .logoFooter {
-    width: 20%;
-    margin-inline: 10px; }
-  footer .footer .links {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .links .links__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-    footer .footer .links .links__menu {
-      list-style-type: none;
-      padding-left: 0px; }
-      footer .footer .links .links__menu .links__menu__item {
-        padding-block: 2.5px; }
-        footer .footer .links .links__menu .links__menu__item a {
-          color: black;
-          text-decoration: none;
-          /* Cambia el color del menú y quita el underline */ }
-  footer .footer .horario {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .horario .horario__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-  footer .footer .suscribete {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .suscribete .suscribete__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-
-footer .copy {
-  text-align: center;
-  font-size: 10px; }
-
 /* Secciones de la página PROYECTO2 */
-/* Header */
-header {
-  position: sticky;
-  top: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.382);
-  z-index: 1;
-  /* Sticky Header: el header siempre nos persigue */ }
-  header div .barraDeAnuncios {
-    background: #f7ebda;
-    text-align: center;
-    padding: 5px;
-    font-family: "Chau Philomene One", sans-serif; }
-  header nav .menu__item li a {
-    color: black;
-    text-decoration: none;
-    /* Cambia el color del menú y quita el underline */ }
-    header nav .menu__item li a:hover {
-      border-bottom: dashed black 2px;
-      /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */ }
-
 /* Banner - PROYECTO1 */
 .bannerProyecto2 {
   height: 80vh;
@@ -1133,77 +780,7 @@ header {
   .gridGaleria2 .G2F7 {
     grid-area: G2F7; }
 
-.callToAction {
-  width: 80%;
-  margin-inline: 10%;
-  margin-block: 50px;
-  text-align: center; }
-  .callToAction .callToAction__titulo,
-  .callToAction .callToAction__texto,
-  .callToAction .callToAction__boton {
-    padding-bottom: 20px; }
-
-footer .footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-  footer .footer .logoFooter {
-    width: 20%;
-    margin-inline: 10px; }
-  footer .footer .links {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .links .links__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-    footer .footer .links .links__menu {
-      list-style-type: none;
-      padding-left: 0px; }
-      footer .footer .links .links__menu .links__menu__item {
-        padding-block: 2.5px; }
-        footer .footer .links .links__menu .links__menu__item a {
-          color: black;
-          text-decoration: none;
-          /* Cambia el color del menú y quita el underline */ }
-  footer .footer .horario {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .horario .horario__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-  footer .footer .suscribete {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .suscribete .suscribete__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-
-footer .copy {
-  text-align: center;
-  font-size: 10px; }
-
 /* Secciones de la página PROYECTO3 */
-/* Header */
-header {
-  position: sticky;
-  top: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.382);
-  z-index: 1;
-  /* Sticky Header: el header siempre nos persigue */ }
-  header div .barraDeAnuncios {
-    background: #f7ebda;
-    text-align: center;
-    padding: 5px;
-    font-family: "Chau Philomene One", sans-serif; }
-  header nav .menu__item li a {
-    color: black;
-    text-decoration: none;
-    /* Cambia el color del menú y quita el underline */ }
-    header nav .menu__item li a:hover {
-      border-bottom: dashed black 2px;
-      /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */ }
-
 /* Banner - PROYECTO3 */
 .bannerProyecto3 {
   height: 80vh;
@@ -1288,77 +865,7 @@ header {
   .gridGaleria3 .G3F5 {
     grid-area: G3F5; }
 
-.callToAction {
-  width: 80%;
-  margin-inline: 10%;
-  margin-block: 50px;
-  text-align: center; }
-  .callToAction .callToAction__titulo,
-  .callToAction .callToAction__texto,
-  .callToAction .callToAction__boton {
-    padding-bottom: 20px; }
-
-footer .footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-  footer .footer .logoFooter {
-    width: 20%;
-    margin-inline: 10px; }
-  footer .footer .links {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .links .links__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-    footer .footer .links .links__menu {
-      list-style-type: none;
-      padding-left: 0px; }
-      footer .footer .links .links__menu .links__menu__item {
-        padding-block: 2.5px; }
-        footer .footer .links .links__menu .links__menu__item a {
-          color: black;
-          text-decoration: none;
-          /* Cambia el color del menú y quita el underline */ }
-  footer .footer .horario {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .horario .horario__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-  footer .footer .suscribete {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .suscribete .suscribete__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-
-footer .copy {
-  text-align: center;
-  font-size: 10px; }
-
 /* Secciones de la página PROYECTO4 */
-/* Header */
-header {
-  position: sticky;
-  top: 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.382);
-  z-index: 1;
-  /* Sticky Header: el header siempre nos persigue */ }
-  header div .barraDeAnuncios {
-    background: #f7ebda;
-    text-align: center;
-    padding: 5px;
-    font-family: "Chau Philomene One", sans-serif; }
-  header nav .menu__item li a {
-    color: black;
-    text-decoration: none;
-    /* Cambia el color del menú y quita el underline */ }
-    header nav .menu__item li a:hover {
-      border-bottom: dashed black 2px;
-      /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */ }
-
 /* Banner - PROYECTO4 */
 .bannerProyecto4 {
   height: 80vh;
@@ -1447,56 +954,6 @@ header {
   .gridGaleria4 .G4F7 {
     grid-area: G4F7; }
 
-.callToAction {
-  width: 80%;
-  margin-inline: 10%;
-  margin-block: 50px;
-  text-align: center; }
-  .callToAction .callToAction__titulo,
-  .callToAction .callToAction__texto,
-  .callToAction .callToAction__boton {
-    padding-bottom: 20px; }
-
-footer .footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-  footer .footer .logoFooter {
-    width: 20%;
-    margin-inline: 10px; }
-  footer .footer .links {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .links .links__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-    footer .footer .links .links__menu {
-      list-style-type: none;
-      padding-left: 0px; }
-      footer .footer .links .links__menu .links__menu__item {
-        padding-block: 2.5px; }
-        footer .footer .links .links__menu .links__menu__item a {
-          color: black;
-          text-decoration: none;
-          /* Cambia el color del menú y quita el underline */ }
-  footer .footer .horario {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .horario .horario__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-  footer .footer .suscribete {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .suscribete .suscribete__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-
-footer .copy {
-  text-align: center;
-  font-size: 10px; }
-
 /* BOOTSTRAP */
 /* Bootstrap --------- */
 /* Info y Contáctanos */
@@ -1509,20 +966,21 @@ footer .copy {
 
 /* Carousel */
 .testimonio .testimonio__titulo {
+  text-align: center;
   overflow: hidden; }
 
-.testimonio .carouselExampleIndicators .carousel-indicators {
+.testimonio .carousel .carousel-indicators {
   background: black;
   opacity: 0; }
 
-.testimonio .carouselExampleIndicators .carousel-inner .carousel-item {
+.testimonio .carousel .carousel-inner .carousel-item {
   height: 40vh;
   min-height: 30vh;
   background: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   overflow: hidden; }
-  .testimonio .carouselExampleIndicators .carousel-inner .carousel-item::before {
+  .testimonio .carousel .carousel-inner .carousel-item::before {
     content: "";
     display: block;
     position: absolute;
@@ -1532,17 +990,17 @@ footer .copy {
     right: 0;
     background: black;
     opacity: 0.1; }
-  .testimonio .carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption {
+  .testimonio .carousel .carousel-inner .carousel-item .carousel-caption {
     padding-inline: 100px;
     color: black;
     border-radius: 15px; }
-    .testimonio .carouselExampleIndicators .carousel-inner .carousel-item .carousel-caption h2 {
+    .testimonio .carousel .carousel-inner .carousel-item .carousel-caption h2 {
       overflow: hidden; }
 
-.testimonio .carouselExampleIndicators .carousel-control-prev .carousel-control-prev-icon {
+.testimonio .carousel .carousel-control-prev .carousel-control-prev-icon {
   background-color: black; }
 
-.testimonio .carouselExampleIndicators .carousel-control-next .carousel-control-next-icon {
+.testimonio .carousel .carousel-control-next .carousel-control-next-icon {
   background-color: black; }
 
 /* Medias Queries */
@@ -1551,6 +1009,48 @@ footer .copy {
   /* General */
   p {
     font-size: 15px; }
+  /* INDEX --------- */
+  /* Banner */
+  .bannerPrincipal {
+    max-width: 100%;
+    height: 40vh; }
+    .bannerPrincipal .bannerPrincipal__contenedor {
+      margin-inline: 20px; }
+      .bannerPrincipal .bannerPrincipal__contenedor .bannerPrincipal__titulo {
+        font-size: 30px; }
+  /* Nuestro Portafolio */
+  .portafolio__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .portafolio__contenedor img {
+      width: 100%; }
+    .portafolio__contenedor .portafolio__descripcion {
+      padding-inline: 5px !important; }
+  /* Nosotros y Servicios */
+  .nosotros img {
+    width: 50%; }
+  .nosotros .nosotros__descripcion {
+    width: 50%; }
+  .servicios img {
+    width: 50%; }
+  .servicios .servicios__descripcion {
+    width: 50%; }
+  /* NOSOTROS --------- */
+  /* Banner */
+  .bannerNosotros {
+    width: 100%;
+    height: 30vh;
+    /* Nuestro Filasofia */ }
+    .bannerNosotros .nuestraFilosofia {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .bannerNosotros .nuestraFilosofia img {
+        width: 100%; }
+  /* SERVICIOS --------- */
   /* Banner */
   .bannerServicios {
     width: 100%;
@@ -1559,13 +1059,148 @@ footer .copy {
   .servicio img {
     width: 50%; }
   .servicio .servicio__descripcion {
-    width: 50%; } }
+    width: 50%; }
+  /* PORTAFOLIO --------- */
+  /* Banner */
+  .bannerPortafolio {
+    width: 100%;
+    height: 30vh; }
+  /* PROYECTOS --------- */
+  /* Banner */
+  .bannerProyecto1 {
+    width: 100%;
+    height: 30vh; }
+  .bannerProyecto2 {
+    width: 100%;
+    height: 30vh; }
+  .bannerProyecto3 {
+    width: 100%;
+    height: 30vh; }
+  .bannerProyecto4 {
+    width: 100%;
+    height: 30vh; }
+  /* CONTACTANOS --------- */
+  /* Mapa */
+  .mapa img {
+    width: 50%; }
+  .mapa .mapa__descripcion {
+    width: 50%; }
+  /* Bootstrap --------- */
+  /* Carousel */
+  .carousel-item {
+    height: 50vh;
+    min-height: 30vh;
+    background: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden; }
+    .carousel-item .carousel-caption {
+      padding-inline: 20px;
+      color: black;
+      border-radius: 15px; } }
 
 /* Para Celulares --------- */
 @media screen and (max-width: 480px) {
   /* General */
   p {
     font-size: 14px; }
+  /* INDEX --------- */
+  /* Banner */
+  .bannerPrincipal {
+    max-width: 100%;
+    height: 40vh;
+    overflow: hidden; }
+    .bannerPrincipal .bannerPrincipal__contenedor {
+      margin: 30px;
+      overflow: hidden; }
+      .bannerPrincipal .bannerPrincipal__contenedor .bannerPrincipal__titulo {
+        font-size: 25px; }
+  /* Nuestro Portafolio */
+  .portafolio__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .portafolio__contenedor img {
+      object-fit: scale-down;
+      width: 100%; }
+    .portafolio__contenedor .portafolio__descripcion {
+      padding-inline: 5px !important; }
+  /* Nosotros y Servicios */
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .nosotros img {
+      width: 100%; }
+    .nosotros .nosotros__descripcion {
+      width: 100%; }
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .servicios img {
+      width: 100%;
+      order: -1; }
+    .servicios .servicios__descripcion {
+      width: 100%;
+      flex: 0; }
+  /* NOSOTROS --------- */
+  /* Banner */
+  .bannerNosotros {
+    width: 100%;
+    height: 30vh; }
+  /* Equipo de trabajo */
+  .equipoDeTrabajo__contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+    grid-template-areas: "persona1" "persona2" "persona3" !important; }
+    .equipoDeTrabajo__contenedor .persona1 {
+      grid-area: persona1; }
+      .equipoDeTrabajo__contenedor .persona1 div img {
+        animation-delay: 1s; }
+    .equipoDeTrabajo__contenedor .persona2 {
+      grid-area: persona2; }
+      .equipoDeTrabajo__contenedor .persona2 div img {
+        animation-delay: 1s; }
+    .equipoDeTrabajo__contenedor .persona3 {
+      grid-area: persona3; }
+      .equipoDeTrabajo__contenedor .persona3 div img {
+        animation-delay: 1s; }
+  /* Nuestro Filasofia */
+  .nuestraFilosofia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .nuestraFilosofia img {
+      width: 100%; }
+    .nuestraFilosofia .nuestraFilosofia__descripcion .nuestraFilosofia__titulo {
+      padding-top: 10px; }
+  /* Valores */
+  .valores {
+    width: 80vw;
+    margin-inline: 10vw;
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "valor1 valor2" "valor3 valor4"; }
+    .valores .valores__valor img {
+      width: 80%; }
+    .valores .valor1 {
+      grid-area: valor1; }
+    .valores .valor2 {
+      grid-area: valor2; }
+    .valores .valor3 {
+      grid-area: valor3; }
+    .valores .valor4 {
+      grid-area: valor4; }
+  /* SERVICIOS --------- */
   /* Banner */
   .bannerServicios {
     width: 100%;
@@ -1584,7 +1219,60 @@ footer .copy {
       flex: 0; }
       .servicio .servicio__descripcion .servicio__titulo {
         padding-top: 20px; }
-  /* Footer */
+  /* PORTAFOLIO --------- */
+  /* Banner */
+  .bannerPortafolio {
+    width: 100%;
+    height: 30vh; }
+  /* Sección de Proyectos */
+  .proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .proyectos .proyectos__contenedor {
+      padding-bottom: 0.5rem; }
+  /* PROYECTOS --------- */
+  /* Banner */
+  .bannerProyecto1 {
+    width: 100%;
+    height: 30vh; }
+  .bannerProyecto2 {
+    width: 100%;
+    height: 30vh; }
+  .bannerProyecto3 {
+    width: 100%;
+    height: 30vh; }
+  .bannerProyecto4 {
+    width: 100%;
+    height: 30vh; }
+  /* CONTACTANOS --------- */
+  /* Mapa */
+  .mapa {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center; }
+    .mapa img {
+      width: 100%; }
+    .mapa .mapa__descripcion {
+      width: 100%; }
+      .mapa .mapa__descripcion .mapa__titulo {
+        padding-top: 20px; }
+  /* Bootstrap --------- */
+  /* Carousel */
+  .carousel-item {
+    height: 50vh;
+    min-height: 30vh;
+    background: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden; }
+    .carousel-item .carousel-caption {
+      padding-inline: 10px;
+      color: black;
+      border-radius: 15px; }
+  /* FOOTER */
   .footer {
     display: flex !important;
     flex-direction: column !important;

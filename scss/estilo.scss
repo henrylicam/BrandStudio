@@ -4,77 +4,56 @@
 @import "./variables/reset";
 @import "./variables/generales";
 
-/* Secciones de la página INDEX */
+/* Secciones similares de las páginas */
 @import "./secciones/header";
+@import "./secciones/calltoaction";
+@import "./secciones/footer";
+
+/* Secciones de la página INDEX */
 @import "./secciones/IndexBanner";
 @import "./secciones/IndexPropuestaDeValor";
 @import "./secciones/IndexNuestroPortafolio";
 @import "./secciones/IndexNosotrosServicios";
-@import "./secciones/calltoaction";
-@import "./secciones/footer";
 
 /* Secciones de la página NOSOTROS */
-@import "./secciones/header";
 @import "./secciones/NosotrosBanner";
 @import "./secciones/NosotrosAcercaDeNosotros";
 @import "./secciones/NosotrosNuestroEquipo";
 @import "./secciones/NosotrosNuestraFilosofia";
 @import "./secciones/NosotrosValores";
-@import "./secciones/calltoaction";
-@import "./secciones/footer";
 
 /* Secciones de la página SERVICIOS */
-@import "./secciones/header";
 @import "./secciones/ServiciosBanner";
 @import "./secciones/ServiciosServicios";
-@import "./secciones/calltoaction";
-@import "./secciones/footer";
 
 /* Secciones de la página PORTAFOLIO */
-@import "./secciones/header";
 @import "./secciones/PortafolioBanner";
 @import "./secciones/PortafolioNuestroPortafolio";
 @import "./secciones/PortafolioProyectos";
-@import "./secciones/calltoaction";
-@import "./secciones/footer";
 
 /* Secciones de la página CONTACTANOS */
-@import "./secciones/header";
 @import "./secciones/ContactanosFormulario";
 @import "./secciones/ContactanosMapa";
-@import "./secciones/footer";
 
 /* Secciones de la página PROYECTO1 */
-@import "./secciones/header";
 @import "./secciones/Proyecto1Banner";
 @import "./secciones/ProyectoDescripcion";
 @import "./secciones/Proyecto1GridGaleria";
-@import "./secciones/calltoaction";
-@import "./secciones/footer";
 
 /* Secciones de la página PROYECTO2 */
-@import "./secciones/header";
 @import "./secciones/Proyecto2Banner";
 @import "./secciones/ProyectoDescripcion";
 @import "./secciones/Proyecto2GridGaleria";
-@import "./secciones/calltoaction";
-@import "./secciones/footer";
 
 /* Secciones de la página PROYECTO3 */
-@import "./secciones/header";
 @import "./secciones/Proyecto3Banner";
 @import "./secciones/ProyectoDescripcion";
 @import "./secciones/Proyecto3GridGaleria";
-@import "./secciones/calltoaction";
-@import "./secciones/footer";
 
 /* Secciones de la página PROYECTO4 */
-@import "./secciones/header";
 @import "./secciones/Proyecto4Banner";
 @import "./secciones/ProyectoDescripcion";
 @import "./secciones/Proyecto4GridGaleria";
-@import "./secciones/calltoaction";
-@import "./secciones/footer";
 
 /* BOOTSTRAP */
 @import "./secciones/Bootstrap";
@@ -86,13 +65,70 @@
   p {
     font-size: 15px;
   }
-
+  /* INDEX --------- */
+  /* Banner */
+  .bannerPrincipal {
+    max-width: 100%;
+    height: 40vh;
+    .bannerPrincipal__contenedor {
+      margin-inline: 20px;
+      .bannerPrincipal__titulo {
+        font-size: 30px;
+      }
+    }
+  }
+  /* Nuestro Portafolio */
+  .portafolio__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+    .portafolio__descripcion {
+      padding-inline: 5px !important;
+    }
+  }
+  /* Nosotros y Servicios */
+  .nosotros {
+    img {
+      width: 50%;
+    }
+    .nosotros__descripcion {
+      width: 50%;
+    }
+  }
+  .servicios {
+    img {
+      width: 50%;
+    }
+    .servicios__descripcion {
+      width: 50%;
+    }
+  }
+  /* NOSOTROS --------- */
+  /* Banner */
+  .bannerNosotros {
+    width: 100%;
+    height: 30vh;
+    /* Nuestro Filasofia */
+    .nuestraFilosofia {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  /* SERVICIOS --------- */
   /* Banner */
   .bannerServicios {
     width: 100%;
     height: 30vh;
   }
-
   /* Sección de servicios */
   .servicio {
     img {
@@ -100,6 +136,55 @@
     }
     .servicio__descripcion {
       width: 50%;
+    }
+  }
+  /* PORTAFOLIO --------- */
+  /* Banner */
+  .bannerPortafolio {
+    width: 100%;
+    height: 30vh;
+  }
+  /* PROYECTOS --------- */
+  /* Banner */
+  .bannerProyecto1 {
+    width: 100%;
+    height: 30vh;
+  }
+  .bannerProyecto2 {
+    width: 100%;
+    height: 30vh;
+  }
+  .bannerProyecto3 {
+    width: 100%;
+    height: 30vh;
+  }
+  .bannerProyecto4 {
+    width: 100%;
+    height: 30vh;
+  }
+  /* CONTACTANOS --------- */
+  /* Mapa */
+  .mapa {
+    img {
+      width: 50%;
+    }
+    .mapa__descripcion {
+      width: 50%;
+    }
+  }
+  /* Bootstrap --------- */
+  /* Carousel */
+  .carousel-item {
+    height: 50vh;
+    min-height: 30vh;
+    background: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    .carousel-caption {
+      padding-inline: 20px;
+      color: black;
+      border-radius: 15px;
     }
   }
 }
@@ -110,6 +195,147 @@
   p {
     font-size: 14px;
   }
+  /* INDEX --------- */
+  /* Banner */
+  .bannerPrincipal {
+    max-width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    .bannerPrincipal__contenedor {
+      margin: 30px;
+      overflow: hidden;
+      .bannerPrincipal__titulo {
+        font-size: 25px;
+      }
+    }
+  }
+  /* Nuestro Portafolio */
+  .portafolio__contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      object-fit: scale-down;
+      width: 100%;
+    }
+    .portafolio__descripcion {
+      padding-inline: 5px !important;
+    }
+  }
+  /* Nosotros y Servicios */
+  .nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+    .nosotros__descripcion {
+      width: 100%;
+    }
+  }
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      order: -1;
+    }
+    .servicios__descripcion {
+      width: 100%;
+      flex: 0;
+    }
+  }
+  /* NOSOTROS --------- */
+  /* Banner */
+  .bannerNosotros {
+    width: 100%;
+    height: 30vh;
+  }
+  /* Equipo de trabajo */
+  .equipoDeTrabajo__contenedor {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+    grid-template-areas:
+      "persona1"
+      "persona2"
+      "persona3" !important;
+    .persona1 {
+      grid-area: persona1;
+      div {
+        img {
+          animation-delay: 1s;
+        }
+      }
+    }
+    .persona2 {
+      grid-area: persona2;
+      div {
+        img {
+          animation-delay: 1s;
+        }
+      }
+    }
+    .persona3 {
+      grid-area: persona3;
+      div {
+        img {
+          animation-delay: 1s;
+        }
+      }
+    }
+  }
+  /* Nuestro Filasofia */
+  .nuestraFilosofia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+    .nuestraFilosofia__descripcion {
+      .nuestraFilosofia__titulo {
+        padding-top: 10px;
+      }
+    }
+  }
+  /* Valores */
+  .valores {
+    width: 80vw;
+    margin-inline: 10vw;
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "valor1 valor2"
+      "valor3 valor4";
+    .valores__valor {
+      img {
+        width: 80%;
+      }
+    }
+    .valor1 {
+      grid-area: valor1;
+    }
+    .valor2 {
+      grid-area: valor2;
+    }
+    .valor3 {
+      grid-area: valor3;
+    }
+    .valor4 {
+      grid-area: valor4;
+    }
+  }
+  /* SERVICIOS --------- */
   /* Banner */
   .bannerServicios {
     width: 100%;
@@ -133,7 +359,73 @@
       }
     }
   }
-  /* Footer */
+  /* PORTAFOLIO --------- */
+  /* Banner */
+  .bannerPortafolio {
+    width: 100%;
+    height: 30vh;
+  }
+  /* Sección de Proyectos */
+  .proyectos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .proyectos__contenedor {
+      padding-bottom: 0.5rem;
+    }
+  }
+  /* PROYECTOS --------- */
+  /* Banner */
+  .bannerProyecto1 {
+    width: 100%;
+    height: 30vh;
+  }
+  .bannerProyecto2 {
+    width: 100%;
+    height: 30vh;
+  }
+  .bannerProyecto3 {
+    width: 100%;
+    height: 30vh;
+  }
+  .bannerProyecto4 {
+    width: 100%;
+    height: 30vh;
+  }
+  /* CONTACTANOS --------- */
+  /* Mapa */
+  .mapa {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+    }
+    .mapa__descripcion {
+      width: 100%;
+      .mapa__titulo {
+        padding-top: 20px;
+      }
+    }
+  }
+  /* Bootstrap --------- */
+  /* Carousel */
+  .carousel-item {
+    height: 50vh;
+    min-height: 30vh;
+    background: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    .carousel-caption {
+      padding-inline: 10px;
+      color: black;
+      border-radius: 15px;
+    }
+  }
+  /* FOOTER */
   .footer {
     display: flex !important;
     flex-direction: column !important;

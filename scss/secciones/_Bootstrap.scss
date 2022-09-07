@@ -12,9 +12,10 @@
 /* Carousel */
 .testimonio {
   .testimonio__titulo {
+    text-align: center;
     overflow: hidden;
   }
-  .carouselExampleIndicators {
+  .carousel {
     .carousel-indicators {
       background: black;
       opacity: 0;
