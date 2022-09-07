@@ -1,0 +1,63 @@
+/* Bootstrap --------- */
+/* Info y Contáctanos */
+.accordion-button {
+  color: inherit;
+  background-color: #f7ebda;
+  &:not(.collapsed) {
+    color: inherit;
+    background-color: #f5c09d;
+  }
+}
+
+/* Carousel */
+.testimonio {
+  .testimonio__titulo {
+    text-align: center;
+    overflow: hidden;
+  }
+  .carousel {
+    .carousel-indicators {
+      background: black;
+      opacity: 0;
+    }
+    .carousel-inner {
+      .carousel-item {
+        height: 40vh;
+        min-height: 30vh;
+        background: no-repeat;
+        -webkit-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background: black;
+          opacity: 0.1;
+        }
+        .carousel-caption {
+          padding-inline: 100px;
+          color: black;
+          border-radius: 15px;
+          h2 {
+            overflow: hidden;
+          }
+        }
+      }
+    }
+    .carousel-control-prev {
+      .carousel-control-prev-icon {
+        background-color: black;
+      }
+    }
+    .carousel-control-next {
+      .carousel-control-next-icon {
+        background-color: black;
+      }
+    }
+  }
+}

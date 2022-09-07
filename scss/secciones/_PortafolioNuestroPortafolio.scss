@@ -1,0 +1,13 @@
+/* Nuestro Portafolio */
+.nuestroPortafolio {
+  width: 70%;
+  margin-inline: 15%;
+  margin-block: 50px;
+  text-align: center;
+  .nuestroPortafolio__titulo {
+    padding-bottom: 20px;
+  }
+  .nuestroPortafolio__texto {
+    padding-bottom: 20px;
+  }
+}

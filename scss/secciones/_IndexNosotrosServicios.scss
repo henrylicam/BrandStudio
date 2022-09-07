@@ -1,0 +1,44 @@
+/* Nosotros */
+.nosotros {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  display: flex;
+  img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+  }
+  .nosotros__descripcion {
+    padding: 40px;
+    text-align: center;
+    .nosotros__titulo {
+      padding-bottom: 20px;
+    }
+    .nosotros__texto {
+      padding-bottom: 20px;
+    }
+  }
+}
+/* Servicios */
+.servicios {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  display: flex;
+  img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+  }
+  .servicios__descripcion {
+    padding: 40px;
+    text-align: center;
+    .servicios__titulo {
+      padding-bottom: 20px;
+    }
+    .servicios__texto {
+      padding-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+/* Acerca de nosotros */
+.acercaDeNosotros {
+  width: 70%;
+  margin-inline: 15%;
+  margin-block: 50px;
+  text-align: center;
+  .acercaDeNosotros__titulo {
+    padding-bottom: 20px;
+  }
+  .acercaDeNosotros__texto {
+    padding-bottom: 20px;
+  }
+}

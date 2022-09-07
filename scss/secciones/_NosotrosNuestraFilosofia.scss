@@ -1,0 +1,29 @@
+/* Nuestra Filosofia */
+.nuestraFilosofia {
+  width: 80%;
+  margin-inline: 10%;
+  margin-block: 50px;
+  border: 3px black dashed;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+
+  img {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+  }
+  .nuestraFilosofia__descripcion {
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    .nuestraFilosofia__titulo {
+      padding-bottom: 20px;
+    }
+    .nuestraFilosofia__texto {
+      padding-bottom: 20px;
+    }
+  }
+}

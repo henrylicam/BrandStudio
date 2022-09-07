@@ -1,4 +1,4 @@
-/* Banner */
+/* Banner - SERVICIOS */
 .bannerServicios {
   width: 100%;
   height: 60vh;
@@ -11,7 +11,7 @@
   align-items: center;
 
   .bannerServicios__contenedor {
-    background-color: #f3f3ebe6;
+    background-color:$ColorBackgroundOpacidad;
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -20,12 +20,43 @@
 
     .bannerServicios__titulo {
       padding-bottom: 15px;
-      background-color: #00000000;
-      font-family: "Chau Philomene One", sans-serif;
+      background-color: rgba(0, 0, 0, 0);
+      font-family: $fontPhilomene;
       font-size: 40px;
       -webkit-animation: focus-in-expand 0.8s
         cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     }
+  }
+}
+
+/* Animacion - Texto Titulos */
+@-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
   }
 }
