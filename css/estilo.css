@@ -1269,7 +1269,7 @@ main section .contactanosForm {
     background-size: cover;
     overflow: hidden; }
     .carousel-item .carousel-caption {
-      padding-inline: 10px;
+      padding-inline: 10px !important;
       color: black;
       border-radius: 15px; }
   /* FOOTER */
