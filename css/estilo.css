@@ -414,17 +414,11 @@ footer .copy {
     text-align: center; }
     .bannerServicios .bannerServicios__contenedor .bannerServicios__titulo {
       padding-bottom: 15px;
-<<<<<<< HEAD
-      background-color: #00000000;
-=======
       background-color: rgba(0, 0, 0, 0);
->>>>>>> tercera
       font-family: "Chau Philomene One", sans-serif;
       font-size: 40px;
       -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
-<<<<<<< HEAD
-=======
 
 /* Animacion - Texto Titulos */
 @-webkit-keyframes focus-in-expand {
@@ -448,7 +442,6 @@ footer .copy {
     -webkit-filter: blur(0);
     filter: blur(0);
     opacity: 1; } }
->>>>>>> tercera
 
 .servicio {
   width: 80%;
@@ -593,13 +586,6 @@ main section .contactanosForm {
   width: 80%;
   margin-inline: 10%;
   margin-block: 50px;
-<<<<<<< HEAD
-  text-align: center; }
-  .callToAction .callToAction__titulo,
-  .callToAction .callToAction__texto,
-  .callToAction .callToAction__boton {
-    padding-bottom: 20px; }
-=======
   display: flex; }
   .mapa img {
     width: auto;
@@ -615,7 +601,6 @@ main section .contactanosForm {
       padding-bottom: 20px; }
     .mapa .mapa__descripcion .mapa__texto {
       padding-bottom: 20px; }
->>>>>>> tercera
 
 /* Secciones de la página PROYECTO1 */
 /* Banner - PROYECTO1 */
@@ -626,41 +611,6 @@ main section .contactanosForm {
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
-<<<<<<< HEAD
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
-  footer .footer .logoFooter {
-    width: 20%;
-    margin-inline: 10px; }
-  footer .footer .links {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .links .links__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-    footer .footer .links .links__menu {
-      list-style-type: none;
-      padding-left: 0px; }
-      footer .footer .links .links__menu .links__menu__item {
-        padding-block: 2.5px; }
-        footer .footer .links .links__menu .links__menu__item a {
-          color: black;
-          text-decoration: none;
-          /* Cambia el color del menú y quita el underline */ }
-  footer .footer .horario {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .horario .horario__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-  footer .footer .suscribete {
-    width: 20%;
-    margin-inline: 10px; }
-    footer .footer .suscribete .suscribete__titulo {
-      padding-bottom: 5px;
-      font-size: 20px; }
-=======
   justify-content: center;
   align-items: center; }
   .bannerProyecto1 .bannerProyecto__contenedor {
@@ -677,7 +627,6 @@ main section .contactanosForm {
       font-size: 40px;
       -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
       animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
->>>>>>> tercera
 
 /* Animacion - Texto Titulos */
 @-webkit-keyframes focus-in-expand {
@@ -1018,9 +967,6 @@ main section .contactanosForm {
 /* Carousel */
 .testimonio .testimonio__titulo {
   text-align: center;
-<<<<<<< HEAD
-  font-size: 10px; }
-=======
   overflow: hidden; }
 
 .testimonio .carousel .carousel-indicators {
@@ -1056,7 +1002,6 @@ main section .contactanosForm {
 
 .testimonio .carousel .carousel-control-next .carousel-control-next-icon {
   background-color: black; }
->>>>>>> tercera
 
 /* Medias Queries */
 /* Para Tablets ---------*/
@@ -1064,8 +1009,6 @@ main section .contactanosForm {
   /* General */
   p {
     font-size: 15px; }
-<<<<<<< HEAD
-=======
   /* INDEX --------- */
   /* Banner */
   .bannerPrincipal {
@@ -1108,7 +1051,6 @@ main section .contactanosForm {
       .bannerNosotros .nuestraFilosofia img {
         width: 100%; }
   /* SERVICIOS --------- */
->>>>>>> tercera
   /* Banner */
   .bannerServicios {
     width: 100%;
@@ -1117,9 +1059,6 @@ main section .contactanosForm {
   .servicio img {
     width: 50%; }
   .servicio .servicio__descripcion {
-<<<<<<< HEAD
-    width: 50%; } }
-=======
     width: 50%; }
   /* PORTAFOLIO --------- */
   /* Banner */
@@ -1159,15 +1098,12 @@ main section .contactanosForm {
       padding-inline: 20px;
       color: black;
       border-radius: 15px; } }
->>>>>>> tercera
 
 /* Para Celulares --------- */
 @media screen and (max-width: 480px) {
   /* General */
   p {
     font-size: 14px; }
-<<<<<<< HEAD
-=======
   /* INDEX --------- */
   /* Banner */
   .bannerPrincipal {
@@ -1265,7 +1201,6 @@ main section .contactanosForm {
     .valores .valor4 {
       grid-area: valor4; }
   /* SERVICIOS --------- */
->>>>>>> tercera
   /* Banner */
   .bannerServicios {
     width: 100%;
@@ -1284,9 +1219,6 @@ main section .contactanosForm {
       flex: 0; }
       .servicio .servicio__descripcion .servicio__titulo {
         padding-top: 20px; }
-<<<<<<< HEAD
-  /* Footer */
-=======
   /* PORTAFOLIO --------- */
   /* Banner */
   .bannerPortafolio {
@@ -1341,7 +1273,6 @@ main section .contactanosForm {
       color: black;
       border-radius: 15px; }
   /* FOOTER */
->>>>>>> tercera
   .footer {
     display: flex !important;
     flex-direction: column !important;
