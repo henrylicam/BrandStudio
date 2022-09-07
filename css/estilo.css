@@ -11,8 +11,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   background-color: #f3f3eb;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 /* Titulos */
 h1,
@@ -21,22 +20,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Chau Philomene One", sans-serif;
-}
+  font-family: "Chau Philomene One", sans-serif; }
 
 /* Botones */
 .boton {
   background-color: #f5c09d;
   border: none;
   padding: 10px;
-  border-radius: 10px;
-}
-.boton a {
-  background-color: #f5c09d;
-  text-decoration: none;
-  color: black;
-  font-family: "Chau Philomene One", sans-serif;
-}
+  border-radius: 10px; }
+  .boton a {
+    background-color: #f5c09d;
+    text-decoration: none;
+    color: black;
+    font-family: "Chau Philomene One", sans-serif; }
 
 /* Secciones de la página Servicios */
 /* Header */
@@ -45,23 +41,19 @@ header {
   top: 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.382);
   z-index: 1;
-  /* Sticky Header: el header siempre nos persigue */
-}
-header div .barraDeAnuncios {
-  background: #f7ebda;
-  text-align: center;
-  padding: 5px;
-  font-family: "Chau Philomene One", sans-serif;
-}
-header nav .menu__item li a {
-  color: black;
-  text-decoration: none;
-  /* Cambia el color del menú y quita el underline */
-}
-header nav .menu__item li a:hover {
-  border-bottom: dashed black 2px;
-  /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */
-}
+  /* Sticky Header: el header siempre nos persigue */ }
+  header div .barraDeAnuncios {
+    background: #f7ebda;
+    text-align: center;
+    padding: 5px;
+    font-family: "Chau Philomene One", sans-serif; }
+  header nav .menu__item li a {
+    color: black;
+    text-decoration: none;
+    /* Cambia el color del menú y quita el underline */ }
+    header nav .menu__item li a:hover {
+      border-bottom: dashed black 2px;
+      /* Hover: Permite que cuando el cursor esta encima de la palabra, aparezaca el underline */ }
 
 /* Banner */
 .bannerServicios {
@@ -73,192 +65,152 @@ header nav .menu__item li a:hover {
   background-position: center center;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.bannerServicios .bannerServicios__contenedor {
-  background-color: #f3f3ebe6;
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.bannerServicios .bannerServicios__contenedor .bannerServicios__titulo {
-  padding-bottom: 15px;
-  background-color: #00000000;
-  font-family: "Chau Philomene One", sans-serif;
-  font-size: 40px;
-  -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
+  align-items: center; }
+  .bannerServicios .bannerServicios__contenedor {
+    background-color: #f3f3ebe6;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+    .bannerServicios .bannerServicios__contenedor .bannerServicios__titulo {
+      padding-bottom: 15px;
+      background-color: #00000000;
+      font-family: "Chau Philomene One", sans-serif;
+      font-size: 40px;
+      -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: focus-in-expand 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
 .servicio {
   width: 80%;
   margin-inline: 10%;
   margin-block: 50px;
   display: flex;
-  /* Esto permite que podamos poner la imagen de un lado y el texto al otro lado */
-}
-.servicio img {
-  width: auto;
-  height: auto;
-  border-radius: 10px;
-}
-.servicio .servicio__descripcion {
-  padding-inline: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.servicio .servicio__descripcion .servicio__titulo {
-  padding-bottom: 20px;
-}
+  /* Esto permite que podamos poner la imagen de un lado y el texto al otro lado */ }
+  .servicio img {
+    width: auto;
+    height: auto;
+    border-radius: 10px; }
+  .servicio .servicio__descripcion {
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    .servicio .servicio__descripcion .servicio__titulo {
+      padding-bottom: 20px; }
 
 .callToAction {
   width: 80%;
   margin-inline: 10%;
   margin-block: 50px;
-  text-align: center;
-}
-.callToAction .callToAction__titulo,
-.callToAction .callToAction__texto,
-.callToAction .callToAction__boton {
-  padding-bottom: 20px;
-}
+  text-align: center; }
+  .callToAction .callToAction__titulo,
+  .callToAction .callToAction__texto,
+  .callToAction .callToAction__boton {
+    padding-bottom: 20px; }
 
 footer .footer {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
-}
-footer .footer .logoFooter {
-  width: 20%;
-  margin-inline: 10px;
-}
-footer .footer .links {
-  width: 20%;
-  margin-inline: 10px;
-}
-footer .footer .links .links__titulo {
-  padding-bottom: 5px;
-  font-size: 20px;
-}
-footer .footer .links .links__menu {
-  list-style-type: none;
-  padding-left: 0px;
-}
-footer .footer .links .links__menu .links__menu__item {
-  padding-block: 2.5px;
-}
-footer .footer .links .links__menu .links__menu__item a {
-  color: black;
-  text-decoration: none;
-  /* Cambia el color del menú y quita el underline */
-}
-footer .footer .horario {
-  width: 20%;
-  margin-inline: 10px;
-}
-footer .footer .horario .horario__titulo {
-  padding-bottom: 5px;
-  font-size: 20px;
-}
-footer .footer .suscribete {
-  width: 20%;
-  margin-inline: 10px;
-}
-footer .footer .suscribete .suscribete__titulo {
-  padding-bottom: 5px;
-  font-size: 20px;
-}
+  justify-content: center; }
+  footer .footer .logoFooter {
+    width: 20%;
+    margin-inline: 10px; }
+  footer .footer .links {
+    width: 20%;
+    margin-inline: 10px; }
+    footer .footer .links .links__titulo {
+      padding-bottom: 5px;
+      font-size: 20px; }
+    footer .footer .links .links__menu {
+      list-style-type: none;
+      padding-left: 0px; }
+      footer .footer .links .links__menu .links__menu__item {
+        padding-block: 2.5px; }
+        footer .footer .links .links__menu .links__menu__item a {
+          color: black;
+          text-decoration: none;
+          /* Cambia el color del menú y quita el underline */ }
+  footer .footer .horario {
+    width: 20%;
+    margin-inline: 10px; }
+    footer .footer .horario .horario__titulo {
+      padding-bottom: 5px;
+      font-size: 20px; }
+  footer .footer .suscribete {
+    width: 20%;
+    margin-inline: 10px; }
+    footer .footer .suscribete .suscribete__titulo {
+      padding-bottom: 5px;
+      font-size: 20px; }
 
 footer .copy {
   text-align: center;
-  font-size: 10px;
-}
+  font-size: 10px; }
 
 /* Medias Queries */
 /* Para Tablets ---------*/
 @media screen and (max-width: 768px) {
   /* General */
   p {
-    font-size: 15px;
-  }
+    font-size: 15px; }
   /* Banner */
   .bannerServicios {
     width: 100%;
-    height: 30vh;
-  }
+    height: 30vh; }
   /* Sección de servicios */
   .servicio img {
-    width: 50%;
-  }
+    width: 50%; }
   .servicio .servicio__descripcion {
-    width: 50%;
-  }
-}
+    width: 50%; } }
 
 /* Para Celulares --------- */
 @media screen and (max-width: 480px) {
   /* General */
   p {
-    font-size: 14px;
-  }
+    font-size: 14px; }
   /* Banner */
   .bannerServicios {
     width: 100%;
-    height: 30vh;
-  }
+    height: 30vh; }
   /* Seccion de servicios */
   .servicio {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-  .servicio img {
-    width: 100%;
-    order: -1;
-  }
-  .servicio .servicio__descripcion {
-    width: 100%;
-    flex: 0;
-  }
-  .servicio .servicio__descripcion .servicio__titulo {
-    padding-top: 20px;
-  }
+    align-items: center; }
+    .servicio img {
+      width: 100%;
+      order: -1; }
+    .servicio .servicio__descripcion {
+      width: 100%;
+      flex: 0; }
+      .servicio .servicio__descripcion .servicio__titulo {
+        padding-top: 20px; }
   /* Footer */
   .footer {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
-    align-items: center !important;
-  }
-  .footer .logoFooter {
-    width: 80vw !important;
-    text-align: center;
-    padding-top: 20px;
-    padding: 0;
-  }
-  .footer .logoFooter img {
-    width: 150px;
-  }
-  .footer .links {
-    width: 80vw !important;
-    text-align: center;
-    padding-top: 20px;
-  }
-  .footer .horario {
-    width: 80vw !important;
-    text-align: center;
-    padding-top: 20px;
-  }
-  .footer .suscribete {
-    width: 80vw !important;
-    text-align: center;
-    padding-top: 20px;
-  }
-}
+    align-items: center !important; }
+    .footer .logoFooter {
+      width: 80vw !important;
+      text-align: center;
+      padding-top: 20px;
+      padding: 0; }
+      .footer .logoFooter img {
+        width: 150px; }
+    .footer .links {
+      width: 80vw !important;
+      text-align: center;
+      padding-top: 20px; }
+    .footer .horario {
+      width: 80vw !important;
+      text-align: center;
+      padding-top: 20px; }
+    .footer .suscribete {
+      width: 80vw !important;
+      text-align: center;
+      padding-top: 20px; } }
