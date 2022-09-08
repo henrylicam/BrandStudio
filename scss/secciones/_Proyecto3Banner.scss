@@ -5,16 +5,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %DisplayFlexRow;
   
     .bannerProyecto__contenedor {
       background-color:$ColorBackgroundOpacidad;
       border-radius: 10px;
       padding: 20px;
-      display: flex;
-      flex-direction: column;
+      @extend %DisplayFlexColumn;
       text-align: center;
   
       .bannerProyecto__titulo {

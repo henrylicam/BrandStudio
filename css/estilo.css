@@ -115,18 +115,11 @@ footer .copy {
   background-image: url("../imagenes/Banner_Principal.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-position: center center; }
   .bannerPrincipal .bannerPrincipal__contenedor {
     background-color: #f3f3ebe6;
     border-radius: 10px;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center; }
     .bannerPrincipal .bannerPrincipal__contenedor .bannerPrincipal__titulo {
       padding-bottom: 15px;
@@ -218,16 +211,11 @@ footer .copy {
   background-image: url("../imagenes/Banner_Servicios.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-position: center center; }
   .bannerNosotros .bannerNosotros__contenedor {
     background-color: #f3f3ebe6;
     border-radius: 10px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     text-align: center; }
     .bannerNosotros .bannerNosotros__contenedor .bannerNosotros__titulo {
       padding-bottom: 15px;
@@ -284,8 +272,6 @@ footer .copy {
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "persona1 persona2 persona3"; }
   .equipoDeTrabajo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona {
-    display: flex;
-    flex-direction: column;
     text-align: center; }
     .equipoDeTrabajo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona div img {
       width: 80%;
@@ -355,9 +341,6 @@ footer .copy {
     border-radius: 10px; }
   .nuestraFilosofia .nuestraFilosofia__descripcion {
     padding-inline: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center; }
     .nuestraFilosofia .nuestraFilosofia__descripcion .nuestraFilosofia__titulo {
       padding-bottom: 20px; }
@@ -401,16 +384,11 @@ footer .copy {
   background-image: url("../imagenes/Banner_Servicios.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-position: center center; }
   .bannerServicios .bannerServicios__contenedor {
     background-color: #f3f3ebe6;
     border-radius: 10px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     text-align: center; }
     .bannerServicios .bannerServicios__contenedor .bannerServicios__titulo {
       padding-bottom: 15px;
@@ -470,16 +448,11 @@ footer .copy {
   background-image: url("../imagenes/Banner_Servicios.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-position: center center; }
   .bannerPortafolio .bannerPortafolio__contenedor {
     background-color: #f3f3ebe6;
     border-radius: 10px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     text-align: center; }
     .bannerPortafolio .bannerPortafolio__contenedor .bannerPortafolio__titulo {
       padding-bottom: 15px;
@@ -531,10 +504,6 @@ footer .copy {
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "proyecto1 proyecto2" "proyecto3 proyecto4"; }
   .proyectos .proyectos__contenedor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-inline: 5vw;
     margin-bottom: 20px; }
     .proyectos .proyectos__contenedor a img {
@@ -593,9 +562,6 @@ main section .contactanosForm {
     border-radius: 10px; }
   .mapa .mapa__descripcion {
     padding-inline: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center; }
     .mapa .mapa__descripcion .mapa__titulo {
       padding-bottom: 20px; }
@@ -609,16 +575,11 @@ main section .contactanosForm {
   background-image: url(../imagenes/BrandStudio_Proyecto1/5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-position: center center; }
   .bannerProyecto1 .bannerProyecto__contenedor {
     background-color: #f3f3ebe6;
     border-radius: 10px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     text-align: center; }
     .bannerProyecto1 .bannerProyecto__contenedor .bannerProyecto__titulo {
       padding-bottom: 15px;
@@ -698,16 +659,11 @@ main section .contactanosForm {
   background-image: url(../imagenes/BrandStudio_Proyecto2/6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-position: center center; }
   .bannerProyecto2 .bannerProyecto__contenedor {
     background-color: #f3f3ebe6;
     border-radius: 10px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     text-align: center; }
     .bannerProyecto2 .bannerProyecto__contenedor .bannerProyecto__titulo {
       padding-bottom: 15px;
@@ -787,16 +743,11 @@ main section .contactanosForm {
   background-image: url(../imagenes/BrandStudio_Proyecto3/4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-position: center center; }
   .bannerProyecto3 .bannerProyecto__contenedor {
     background-color: #f3f3ebe6;
     border-radius: 10px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     text-align: center; }
     .bannerProyecto3 .bannerProyecto__contenedor .bannerProyecto__titulo {
       padding-bottom: 15px;
@@ -872,16 +823,11 @@ main section .contactanosForm {
   background-image: url(../imagenes/BrandStudio_Proyecto4/14.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-position: center center; }
   .bannerProyecto4 .bannerProyecto__contenedor {
     background-color: #f3f3ebe6;
     border-radius: 10px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
     text-align: center; }
     .bannerProyecto4 .bannerProyecto__contenedor .bannerProyecto__titulo {
       padding-bottom: 15px;
@@ -953,6 +899,19 @@ main section .contactanosForm {
     grid-area: G4F6; }
   .gridGaleria4 .G4F7 {
     grid-area: G4F7; }
+
+/* Extends Placeholders */
+/* Extend Placeholder */
+.bannerPrincipal, .bannerNosotros, .bannerServicios, .bannerPortafolio, .bannerProyecto1, .bannerProyecto2, .bannerProyecto3, .bannerProyecto4 {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.bannerPrincipal .bannerPrincipal__contenedor, .bannerNosotros .bannerNosotros__contenedor, .equipoDeTrabajo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona, .nuestraFilosofia .nuestraFilosofia__descripcion, .bannerServicios .bannerServicios__contenedor, .bannerPortafolio .bannerPortafolio__contenedor, .proyectos .proyectos__contenedor, .mapa .mapa__descripcion, .bannerProyecto1 .bannerProyecto__contenedor, .bannerProyecto2 .bannerProyecto__contenedor, .bannerProyecto3 .bannerProyecto__contenedor, .bannerProyecto4 .bannerProyecto__contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 /* BOOTSTRAP */
 /* Bootstrap --------- */

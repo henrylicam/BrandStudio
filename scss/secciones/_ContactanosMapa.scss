@@ -11,9 +11,7 @@
   }
   .mapa__descripcion {
     padding-inline: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend %DisplayFlexColumn;
     text-align: center;
     .mapa__titulo {
       padding-bottom: 20px;

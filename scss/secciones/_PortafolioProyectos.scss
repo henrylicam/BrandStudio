@@ -8,10 +8,7 @@
       "proyecto1 proyecto2"
       "proyecto3 proyecto4";
       .proyectos__contenedor {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @extend %DisplayFlexColumn;
         margin-inline: 5vw;
         margin-bottom: 20px;
         a{

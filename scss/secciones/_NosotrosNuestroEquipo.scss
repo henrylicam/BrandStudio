@@ -13,8 +13,7 @@
   grid-template-areas: "persona1 persona2 persona3";
 
   .equipoDeTrabajo__persona {
-    display: flex;
-    flex-direction: column;
+    @extend %DisplayFlexColumn;
     text-align: center;
     div {
       img {

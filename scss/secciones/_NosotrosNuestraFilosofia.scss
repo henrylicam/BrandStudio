@@ -15,9 +15,7 @@
   }
   .nuestraFilosofia__descripcion {
     padding-inline: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @extend %DisplayFlexColumn;
     text-align: center;
     .nuestraFilosofia__titulo {
       padding-bottom: 20px;
