@@ -310,11 +310,13 @@ footer .copy {
   width: 80vw;
   margin-inline: 10vw;
   display: grid;
+  align-items: flex-start;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-template-areas: "persona1 persona2 persona3"; }
   .equipoDeTrabajo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona {
-    text-align: center; }
+    text-align: center;
+    padding-inline: 25px; }
     .equipoDeTrabajo .equipoDeTrabajo__contenedor .equipoDeTrabajo__persona div img {
       width: 80%;
       border-radius: 50%;
