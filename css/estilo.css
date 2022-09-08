@@ -114,15 +114,15 @@ footer .copy {
   font-size: 10px; }
 
 .fa-facebook {
-  border: 2px blue dashed;
+  border: 2px #1c76e5 dashed;
   border-radius: 5px; }
 
 .fa-instagram {
-  border: 2px #e41aae dashed;
+  border: 2px #f384d5 dashed;
   border-radius: 5px; }
 
 .fa-whatsapp {
-  border: 2px green dashed;
+  border: 2px #47ca47 dashed;
   border-radius: 5px; }
 
 .fa-twitter {
@@ -130,8 +130,23 @@ footer .copy {
   border-radius: 5px; }
 
 .fa-youtube {
-  border: 2px red dashed;
+  border: 2px #ea5252 dashed;
   border-radius: 5px; }
+
+.fa-facebook:hover {
+  background-color: #1c76e5; }
+
+.fa-instagram:hover {
+  background-color: #f384d5; }
+
+.fa-whatsapp:hover {
+  background-color: #47ca47; }
+
+.fa-twitter:hover {
+  background-color: skyblue; }
+
+.fa-youtube:hover {
+  background-color: #ea5252; }
 
 /* Secciones de la página INDEX */
 /* Banner - INDEX */

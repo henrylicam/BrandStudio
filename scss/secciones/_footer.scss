@@ -62,11 +62,11 @@ footer {
 }
 
 $redesSociales:(
-  facebook:blue,
-  instagram:rgb(228, 26, 174),
-  whatsapp:green,
+  facebook:rgb(28, 118, 229),
+  instagram:rgb(243, 132, 213),
+  whatsapp:rgb(71, 202, 71),
   twitter:skyblue,
-  youtube:red
+  youtube:rgb(234, 82, 82)
 );
 
 @each $redsocial, $color in $redesSociales {
@@ -76,3 +76,8 @@ $redesSociales:(
   }
 }  
 
+@each $redsocial, $color in $redesSociales {
+  .fa-#{$redsocial}:hover{
+    background-color: map-get($redesSociales, $redsocial );
+  }
+}  
