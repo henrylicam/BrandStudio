@@ -103,9 +103,35 @@ footer .footer {
       padding-bottom: 5px;
       font-size: 20px; }
 
+footer .iconos {
+  gap: 0.7rem; }
+  footer .iconos .fab {
+    padding: 0.5rem;
+    font-size: 20px; }
+
 footer .copy {
   text-align: center;
   font-size: 10px; }
+
+.fa-facebook {
+  border: 2px blue dashed;
+  border-radius: 5px; }
+
+.fa-instagram {
+  border: 2px #e41aae dashed;
+  border-radius: 5px; }
+
+.fa-whatsapp {
+  border: 2px green dashed;
+  border-radius: 5px; }
+
+.fa-twitter {
+  border: 2px skyblue dashed;
+  border-radius: 5px; }
+
+.fa-youtube {
+  border: 2px red dashed;
+  border-radius: 5px; }
 
 /* Secciones de la página INDEX */
 /* Banner - INDEX */
@@ -902,7 +928,7 @@ main section .contactanosForm {
 
 /* Extends Placeholders */
 /* Extend Placeholder */
-.bannerPrincipal, .bannerNosotros, .bannerServicios, .bannerPortafolio, .bannerProyecto1, .bannerProyecto2, .bannerProyecto3, .bannerProyecto4 {
+footer .iconos, .bannerPrincipal, .bannerNosotros, .bannerServicios, .bannerPortafolio, .bannerProyecto1, .bannerProyecto2, .bannerProyecto3, .bannerProyecto4 {
   display: flex;
   justify-content: center;
   align-items: center; }

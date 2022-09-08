@@ -47,8 +47,32 @@ footer {
       }
     }
   }
+  .iconos {
+    @extend %DisplayFlexRow;
+    gap: 0.7rem;
+    .fab {
+      padding: 0.5rem;
+      font-size: 20px;
+    }
+  }
   .copy {
     text-align: center;
     font-size: 10px;
   }
 }
+
+$redesSociales:(
+  facebook:blue,
+  instagram:rgb(228, 26, 174),
+  whatsapp:green,
+  twitter:skyblue,
+  youtube:red
+);
+
+@each $redsocial, $color in $redesSociales {
+  .fa-#{$redsocial}{
+    border: 2px $color dashed;
+    border-radius: 5px;
+  }
+}  
+
