@@ -1,5 +1,5 @@
 /* Mixin para las medidas de los banners */
-@mixin medidas($ancho, $alto){
+@mixin medidas($ancho, $alto) {
   width: $ancho;
   height: $alto;
 }

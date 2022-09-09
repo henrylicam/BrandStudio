@@ -61,23 +61,23 @@ footer {
   }
 }
 
-$redesSociales:(
-  facebook:rgb(28, 118, 229),
-  instagram:rgb(243, 132, 213),
-  whatsapp:rgb(71, 202, 71),
-  twitter:skyblue,
-  youtube:rgb(234, 82, 82)
+$redesSociales: (
+  facebook: rgb(28, 118, 229),
+  instagram: rgb(243, 132, 213),
+  whatsapp: rgb(71, 202, 71),
+  twitter: skyblue,
+  youtube: rgb(234, 82, 82),
 );
 
 @each $redsocial, $color in $redesSociales {
-  .fa-#{$redsocial}{
+  .fa-#{$redsocial} {
     border: 2px $color dashed;
     border-radius: 5px;
   }
-}  
+}
 
 @each $redsocial, $color in $redesSociales {
-  .fa-#{$redsocial}:hover{
-    background-color: map-get($redesSociales, $redsocial );
+  .fa-#{$redsocial}:hover {
+    background-color: map-get($redesSociales, $redsocial);
   }
-}  
+}
