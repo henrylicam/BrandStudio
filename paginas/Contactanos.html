@@ -153,41 +153,41 @@
                 </div>
 
                 <div class="col-md-6 py-4">
-                    <form>
+                    <form action="index.html" method="post">
                         <h3 class="contactanosForm">Haz una consulta</h3>
                         <hr>
                         <div class="row py-3">
                             <div class="col">
-                                <label for="exampleFormControlInput1" class="form-label">Nombres</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Nombres">
+                                <label for="FormNombre" class="form-label">Nombres</label>
+                                <input type="text" class="form-control" id="FormNombre"
+                                    placeholder="Nombres" required>
                             </div>
                             <div class="col">
-                                <label for="exampleFormControlInput1" class="form-label">Apellidos</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Apellidos">
+                                <label for="FormApellido" class="form-label">Apellidos</label>
+                                <input type="text" class="form-control" id="FormApellido"
+                                    placeholder="Apellidos" required>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1"
-                                placeholder="name@example.com">
+                            <label for="FormEmail" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="FormEmail"
+                                placeholder="name@example.com" required>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Servicio a consultar</label>
+                            <label for="FormOptions" class="form-label">Servicio a consultar</label>
                             <select class="form-select" aria-label="Default select example"
-                                placeholder="Selecciona un servicio">
+                                placeholder="Selecciona un servicio" id="FormOptions" required>
                                 <option selected>Branding</option>
                                 <option value="2">Web Design</option>
                                 <option value="3">Marketing</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Consulta</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="FormTextArea" class="form-label">Consulta</label>
+                            <textarea class="form-control" id="FormTextArea" rows="3"></textarea required>
                         </div>
-                        <button class="boton">
-                            <a href="#">Enviar</a>
+                        <button type="submit" class="boton">
+                            <a href="./Contactanos.html">Enviar</a>
                         </button>
                     </form>
                 </div>
